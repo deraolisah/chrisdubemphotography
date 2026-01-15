@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import { TextAlignJustify } from 'lucide-react';
 
 const Navbar = () => {
   return (
@@ -9,7 +10,9 @@ const Navbar = () => {
       </Link>
 
 
-      <ul className='flex items-center gap-6'>
+      <TextAlignJustify className='flex md:hidden' />
+
+      <ul className='hidden md:flex items-center gap-6'>
         <li className=''><Link to="/"> Home </Link></li>
         <li className=''><Link to="/about"> About </Link></li>
         <li className=''><Link to="/portfolio"> Portfolio </Link></li>
