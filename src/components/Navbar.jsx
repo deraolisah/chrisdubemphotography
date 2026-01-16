@@ -10,7 +10,7 @@ const Navbar = () => {
       </Link>
 
 
-      <TextAlignJustify className='flex md:hidden' />
+      <TextAlignJustify className='flex md:hidden cursor-pointer' />
 
       <ul className='hidden md:flex items-center gap-6'>
         <li className=''><Link to="/"> Home </Link></li>
