@@ -1,4 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&display=swap');
 
 @import "tailwindcss";
+
+
+@theme{
+  --color-primary: blue-800;
+
+
+  --font-body: "Work Sans", sans-serif;
+  /* --font-display: "Cormorant Garamond", serif; */
+  /* --font-display: "Cormorant SC", serif; */
+  /* --font-display: "Baskervville", serif; */
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 16px;
+  /* background: red; */
+  max-width: 1920px;
+}
 

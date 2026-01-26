@@ -1,14 +1,12 @@
-import Navbar from "../src/components/Navbar.jsx";
-import UnderConstruction from "./pages/UnderConstruction";
+import React from 'react'
+import AppRoutes from './routes/AppRoutes';
 
-function App() {
+const App = () => {
   return (
-    <div className="min-h-screen bg-white text-gray-900">
-      <Navbar />
-      
-      <UnderConstruction />
+    <div>
+      <AppRoutes />
     </div>
-  );
+  )
 }
 
 export default App;
