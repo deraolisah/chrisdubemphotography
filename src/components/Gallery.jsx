@@ -3,9 +3,15 @@ import React from 'react';
 const Gallery = () => {
   return (
     <section className="py-2 md:py-4">
-      <div className="container">
+      <div className="container space-y-2">
+        <div className='flex items-center justify-between gap-1 text-xs md:text-sm uppercase'>
+          <div className='w-full text-start'> 7+ YEARS EXPERIENCE </div>
+          <div className='w-full text-center'> 70+ Photos CAPTURED </div>
+          <div className='w-full text-end uppercase'> Basel, Switzerland </div>
+        </div>
+
         {/* Responsive grid: 2x2 on mobile, custom layout on desktop */}
-        <div className="grid grid-cols-2 md:grid-cols-3 md:grid-rows-3 gap-2 min-h-screen">
+        <div className="grid grid-cols-2 md:grid-cols-3 md:grid-rows-3 gap-2 h-300 md:h-screen">
           
           {/* Item 1 - Top left */}
           <div className="col-span-1 md:col-start-1 md:row-start-1 bg-gray-400 p-2">

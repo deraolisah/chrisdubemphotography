@@ -12,6 +12,7 @@
 
 @theme{
   --color-primary: 'blue';
+  --color-dark: #1D1D1D;
 
 
   --font-body: "Work Sans", sans-serif;
