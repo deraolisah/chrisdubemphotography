@@ -10,30 +10,38 @@ const images = [
   img01,
   img02,
   img03,
-  // img04,
-  // img05
 ];
 
 const portfolioItems = [
   {
     id: 1,
     client: 'Tech Startup CEO',
-    cover: '/images/client1/cover.jpg',
+    cover: img01,
     gallery: [
-      '/images/client1/1.jpg',
-      '/images/client1/2.jpg',
-      '/images/client1/3.jpg',
+      img01,
+      img02,
+      img03,
     ],
   },
   {
     id: 2,
     client: 'Corporate Consulting Firm',
-    cover: '/images/client2/cover.jpg',
+    cover: img02,
     gallery: [
-      '/images/client2/1.jpg',
-      '/images/client2/2.jpg',
+      img02,
+      img03,
     ],
   },
+  {
+    id: 3,
+    client: "Personal Brand - Adozie",
+    cover: img03,
+    gallery: [
+      img03,
+      img01,
+      img02
+    ]
+  }
 ];
 
 const Portfolio = () => {
@@ -48,7 +56,7 @@ const Portfolio = () => {
   };
 
   return (
-    <section className="bg-dark py-16 px-4 md:px-10">
+    <section className="container py-16">
       <h2 className="text-2xl md:text-3xl font-semibold text-white mb-10">
         Portfolio
       </h2>
