@@ -30,9 +30,9 @@ const Hero = () => {
           <span className='text-blue-800'>Personal</span> Branding
         </h1> */}
 
-        <button className='uppercase bg-blue-800 hover:bg-linear-to-tr from-gray-500/50 via-gray-200/10 to-gray-200/30 py-3 px-8 text-xs font-medium flex items-center gap-1 border border-gray-600 cursor-pointer text-white rounded-full hover:opacity-90 transition'> 
-          Book An Appointment 
-          <ArrowRight size={12} />
+        <button className='uppercase bg-blue-800 hover:bg-linear-to-tr from-gray-500/50 via-gray-200/10 to-gray-200/30 py-3 px-8 text-xs font-medium flex items-center gap-1 border border-gray-600 cursor-pointer text-white rounded-full hover:opacity-90 transition-all duration-300 group'> 
+          <span> Book An Appointment </span>
+          <ArrowRight size={12} className='group-hover:translate-x-3 transition duration-300' />
         </button>
 
         {/* <div className='w-fit uppercase text-sm leading-6  whitespace-nowrap'>

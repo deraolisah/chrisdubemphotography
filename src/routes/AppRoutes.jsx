@@ -5,14 +5,14 @@ import Footer from "../components/Footer.jsx";
 
 import Home from "../pages/Home.jsx";
 import About from "../pages/About.jsx";
-import Journal from "../pages/Journal.jsx";
+// import Journal from "../pages/Journal.jsx";
 import Contact from "../pages/Contact.jsx";
 import Portfolio from "../pages/Portfolio.jsx";
 
 
 function AppRoutes() {
   return (
-    <div className="min-h-screen bg-dark text-white font-body -tracking-[0.5px]">
+    <div className="min-h-screen overflow-x-hidden bg-dark text-white font-body -tracking-[0.5px]">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home /> } />      

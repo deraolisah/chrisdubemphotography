@@ -1,10 +1,27 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
 import { TextAlignJustify } from 'lucide-react';
 import logo from "../assets/logo-horizontal.png";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    if(isMenuOpen){
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    } 
+  }, [isMenuOpen]);
+
+  
+  //   useEffect(() => {
+  //   if (modalOpened) {
+  //     document.body.style.overflow = 'hidden';
+  //   } else {
+  //     document.body.style.overflow = 'auto';
+  //   }
+  // }, [modalOpened]);
 
   return (
     <nav className='container mx-auto px-4 flex items-center justify-between h-12 md:h-20 relative'>
@@ -44,8 +61,8 @@ const Navbar = () => {
       </ul>
 
 
-      {isMenuOpen && (
-        <div className="md:hidden bg-black w-full h-screen absolute top-full left-0">
+      {/* {isMenuOpen && ( */}
+        <div className={`md:hidden bg-black w-full h-screen absolute top-12 left-0 transition-all duration-300 ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}>
           <ul className='flex flex-col items-center gap-6 uppercase text-sm py-4'>
             <li className=''><Link to="/"> Home </Link></li>
             <li className=''><Link to="/about"> About </Link></li>
@@ -53,7 +70,7 @@ const Navbar = () => {
             <li className=''><Link to="/contact"> Contact </Link></li>
           </ul>
         </div>
-      )}
+      {/* )} */}
     </nav>
   )
 }
