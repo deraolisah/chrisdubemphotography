@@ -1,4 +1,5 @@
 import React from 'react';
+import { Send } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -61,6 +62,7 @@ const Contact = () => {
             className="bg-black text-white px-8 py-3 rounded-full hover:opacity-90 transition"
           >
             Send Message
+            <Send />
           </button>
         </div>
       </form>
