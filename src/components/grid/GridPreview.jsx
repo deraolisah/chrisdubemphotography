@@ -49,7 +49,7 @@ const GridPreview = forwardRef(({
   return (
     <div
       ref={previewRef}
-      className={`fixed inset-0 z-50 bg-black/90 transition-all duration-700 ${
+      className={`fixed inset-0 z-50 bg-dark/90 transition-all duration-700 ${
         isExpanded 
           ? 'opacity-100 pointer-events-auto backdrop-blur-lg' 
           : 'opacity-0 pointer-events-none backdrop-blur-0'
@@ -72,8 +72,8 @@ const GridPreview = forwardRef(({
         {/* Main content - responsive layout */}
         <div className={`min-h-full w-full flex ${
           isMobile 
-            ? 'flex-col items-center justify-start p-6 pt-24' 
-            : 'flex-row items-center justify-center p-12'
+            ? 'flex-col items-center justify-start p-4.5 pt-24' 
+            : 'flex-row items-center justify-center p-10'
         }`}>
           
           {/* Original image */}
