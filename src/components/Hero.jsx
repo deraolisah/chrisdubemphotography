@@ -16,14 +16,14 @@ const Hero = () => {
           Photographer
         </h1>
 
-        <button className='uppercase bg-gray-700 hover:bg-linear-to-tr from-gray-500/50 via-gray-200/10 to-gray-200/30 py-3 px-8 text-xs font-medium flex items-center gap-1 border border-gray-600 cursor-pointer text-white rounded-sm hover:opacity-90 transition-all duration-300 group'> 
+        <button className='uppercase bg-gray-700 hover:bg-linear-to-tr from-gray-500/50 via-gray-200/10 to-gray-200/30 py-3 px-5.5 text-xs font-medium flex items-center gap-1 border border-gray-600 cursor-pointer text-white rounded-sm hover:opacity-90 transition-all duration-300 group'> 
           <span> Book An Appointment </span>
-          <ArrowRight size={12} className='group-hover:translate-x-3 transition duration-300' />
+          <ArrowRight size={12} className='group-hover:translate-x-1.5 transition duration-300' />
         </button>
       </div>
 
 
-      <div className='container md:mt-14 mt-10 my-4'>     
+      <div className='container md:mt-14 mt-10 my-3'>     
         <div className='flex items-center justify-between gap-1 text-xs md:text-sm uppercase'>
           <div className='w-full text-start'> 7+ YEARS EXPERIENCE </div>
           <div className='w-full text-center'> 70+ Photos CAPTURED </div>

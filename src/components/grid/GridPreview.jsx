@@ -33,9 +33,18 @@ const GridPreview = forwardRef(({
     }
   }, [isExpanded, selectedItem]);
 
+  useEffect(() => {
+    if(isExpanded){
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    } 
+  }, [isExpanded]);
+
   if (!selectedItem) return null;
 
   const isMobile = typeof window !== 'undefined' && window.innerWidth <= 768;
+
 
   return (
     <div

@@ -1,3 +1,5 @@
+import Eve from "../assets/Eve.jpeg";
+
 export const portfolioData = [
   {
     id: 1,
@@ -31,7 +33,7 @@ export const portfolioData = [
     role: "Portrait Photographer",
     stack: ["Canon R5", "85mm f/1.2", "Profoto"],
     link: "https://example.com",
-    thumb: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600",
+    thumb: Eve,
     original: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=1200",
     size: "958x1280",
     dimensions: { width: 958, height: 1280 },

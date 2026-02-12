@@ -54,15 +54,15 @@ const Navbar = () => {
         <li className=''><Link to="/"> Home </Link></li>
         |
         <li className=''><Link to="/about"> About </Link></li>
-        |
-        <li className=''><Link to="/portfolio"> Portfolio </Link></li>
+        {/* | */}
+        {/* <li className=''><Link to="/portfolio"> Portfolio </Link></li> */}
         |
         <li className=''><Link to="/contact"> Contact </Link></li>
       </ul>
 
 
       {/* {isMenuOpen && ( */}
-        <div className={`md:hidden bg-black w-full h-screen absolute top-12 left-0 transition-all duration-300 ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}>
+        <div className={`md:hidden bg-dark w-full h-screen absolute z-100 top-12 left-0 transition-all duration-300 ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}>
           <ul className='flex flex-col items-center gap-6 uppercase text-sm py-4'>
             <li className=''><Link to="/"> Home </Link></li>
             <li className=''><Link to="/about"> About </Link></li>
