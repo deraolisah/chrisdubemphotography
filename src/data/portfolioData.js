@@ -1,17 +1,20 @@
-import Eve from "../assets/Eve.jpeg";
-import Eve2 from "../assets/Eve-3.jpeg";
 
-import Mathys from "../assets/Mathys-3.jpeg";
-import Mathys2 from "../assets/Mathys-4.jpeg";
 
-import Ani from "../assets/Ani Abesadze.jpeg";
+import Img1 from "../assets/1.jpeg";
+import Img2 from "../assets/2.jpeg";
+import Img3 from "../assets/3.jpeg";
+import Img4 from "../assets/4.jpeg";
+import Img5 from "../assets/5.jpeg";
+import Img6 from "../assets/6.jpeg";
+import Img7 from "../assets/7.jpeg";
+import Img8 from "../assets/8.jpeg";
+import Img9 from "../assets/9.jpeg";
+import Img10 from "../assets/10.jpeg";
+import Img11 from "../assets/11.jpeg";
+import Img12 from "../assets/12.jpeg";
+import Img13 from "../assets/13.jpeg";
+import Img14 from "../assets/14.jpeg";
 
-import Barr from "../assets/Barr Livinus-10.jpeg";
-
-import Img1 from "../assets/Lota-4.jpeg";
-import Img2 from "../assets/IMG_7865.jpeg";
-import Img3 from "../assets/Collins-5.jpeg";
-import Img4 from "../assets/Image-4.jpeg";
 
 export const portfolioData = [
   {
@@ -24,10 +27,12 @@ export const portfolioData = [
     role: "Lead Photographer",
     stack: ["Sony A7R IV", "24-70mm GM", "Lightroom"],
     link: "https://example.com",
-    thumb: Ani,
-    original: Ani,
+    thumb: Img1,
+    original: Img1,
     // original: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1200",
-    size: "1280x853",
+    // size: "1280x853",
+    size: "1080x720",
+    ratio: "3:2",
     dimensions: { width: 1280, height: 853 },
     details: {
       camera: "Sony A7R IV",
@@ -47,10 +52,12 @@ export const portfolioData = [
     role: "Portrait Photographer",
     stack: ["Canon R5", "85mm f/1.2", "Profoto"],
     link: "https://example.com",
-    thumb: Img1,
-    original: Img1,
+    thumb: Img2,
+    original: Img2,
     // original: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=1200",
-    size: "958x1280",
+    // size: "958x1280",
+    size: "1080x1440",
+    ratio: "3:4",
     dimensions: { width: 958, height: 1280 },
     details: {
       camera: "Canon R5",
@@ -70,10 +77,12 @@ export const portfolioData = [
     role: "Fine Art Photographer",
     stack: ["Fujifilm GFX", "50mm", "Capture One"],
     link: "https://example.com",
-    thumb: Eve2,
-    original: Eve2,
+    thumb: Img3,
+    original: Img3,
     // original: "https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?w=1200",
-    size: "837x1280",
+    // size: "837x1280",
+    size: "1080x1800",
+    ratio: "3:5",
     dimensions: { width: 837, height: 1280 },
     details: {
       camera: "Fujifilm GFX 50S",
@@ -95,7 +104,9 @@ export const portfolioData = [
     link: "https://example.com",
     thumb: Img4,
     original: Img4,
-    size: "1280x961",
+    // size: "1280x961",
+    size: "1080x720",
+    ratio: "3:2",
     dimensions: { width: 1280, height: 961 },
     details: {
       camera: "Leica M10",
@@ -115,10 +126,12 @@ export const portfolioData = [
     role: "Product Photographer",
     stack: ["Phase One", "120mm", "Capture One"],
     link: "https://example.com",
-    thumb: Img3,
-    original: Img3,
+    thumb: Img5,
+    original: Img5,
     // original: "https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=1200",
-    size: "1280x1131",
+    // size: "1280x1131",
+    size: "1080x1080",
+    ratio: "3:3",
     dimensions: { width: 1280, height: 1131 },
     details: {
       camera: "Phase One IQ4",
@@ -138,10 +151,12 @@ export const portfolioData = [
     role: "Portrait Photographer",
     stack: ["Nikon Z9", "50mm", "Natural Light"],
     link: "https://example.com",
-    thumb: Img2,
-    original: Img2,
+    thumb: Img6,
+    original: Img6,
     // original: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=1200",
-    size: "1280x857",
+    // size: "1280x857",
+    size: "1080x720",
+    ratio: "3:2",
     dimensions: { width: 1280, height: 857 },
     details: {
       camera: "Nikon Z9",
@@ -161,9 +176,10 @@ export const portfolioData = [
     role: "Architectural Photographer",
     stack: ["Hasselblad H6D", "35mm", "Photoshop"],
     link: "https://example.com",
-    thumb: Mathys2,
-    original: Mathys2,
-    size: "1280x1280",
+    thumb: Img7,
+    original: Img7,
+    size: "1080x1080",
+    ratio: "3:3",
     dimensions: { width: 1280, height: 1280 },
     details: {
       camera: "Hasselblad H6D",
@@ -183,9 +199,10 @@ export const portfolioData = [
     role: "Sports Photographer",
     stack: ["Sony A1", "400mm", "Fast Shutter"],
     link: "https://example.com",
-    thumb: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=600",
-    original: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=1200",
-    size: "1280x853",
+    thumb: Img8,
+    original: Img8,
+    size: "1080x1440",
+    ratio: "3:4",
     dimensions: { width: 1280, height: 853 },
     details: {
       camera: "Sony A1",
@@ -205,8 +222,8 @@ export const portfolioData = [
     role: "Drone Pilot",
     stack: ["DJI Mavic 3", "24mm", "Lightroom"],
     link: "https://example.com",
-    thumb: Mathys,
-    original: Mathys,
+    thumb: Img9,
+    original: Img9,
     size: "865x1280",
     dimensions: { width: 865, height: 1280 },
     details: {
@@ -227,9 +244,10 @@ export const portfolioData = [
     role: "Macro Photographer",
     stack: ["Olympus OM-D", "60mm Macro", "Focus Stacking"],
     link: "https://example.com",
-    thumb: Barr,
-    original: Barr,
-    size: "1280x1280",
+    thumb: Img10,
+    original: Img10,
+    size: "1080x1080",
+    ratio: "3:3",
     dimensions: { width: 1280, height: 1280 },
     details: {
       camera: "Olympus OM-D",
@@ -249,9 +267,10 @@ export const portfolioData = [
     role: "Landscape Photographer",
     stack: ["Canon 5D IV", "16-35mm", "ND Filters"],
     link: "https://example.com",
-    thumb: "https://images.unsplash.com/photo-1507525425514-89919b2f32fd?w=600",
-    original: "https://images.unsplash.com/photo-1507525425514-89919b2f32fd?w=1200",
-    size: "1280x850",
+    thumb: Img11,
+    original: Img11,
+    size: "1080x1440",
+    ratio: "3:4",
     dimensions: { width: 1280, height: 850 },
     details: {
       camera: "Canon 5D IV",
@@ -271,8 +290,31 @@ export const portfolioData = [
     role: "Landscape Photographer",
     stack: ["Canon 5D IV", "16-35mm", "ND Filters"],
     link: "https://example.com",
-    thumb: "https://images.unsplash.com/photo-1507525425514-89919b2f32fd?w=600",
-    original: "https://images.unsplash.com/photo-1507525425514-89919b2f32fd?w=1200",
+    thumb: Img12,
+    original: Img12,
+    size: "1080x1800",
+    ratio: "3:5",
+    dimensions: { width: 1280, height: 850 },
+    details: {
+      camera: "Canon 5D IV",
+      focalLength: "24mm",
+      aperture: "f/11",
+      exposureTime: "1/30",
+      iso: "100"
+    }
+  },
+  {
+    id: 13,
+    title: "Golden Hour",
+    client: "Sunset Magazine",
+    category: "Landscape",
+    year: "2023",
+    description: "Coastal landscapes during golden hour.",
+    role: "Landscape Photographer",
+    stack: ["Canon 5D IV", "16-35mm", "ND Filters"],
+    link: "https://example.com",
+    thumb: Img13,
+    original: Img13,
     size: "1280x850",
     dimensions: { width: 1280, height: 850 },
     details: {
@@ -282,5 +324,28 @@ export const portfolioData = [
       exposureTime: "1/30",
       iso: "100"
     }
-  }
+  },
+  {
+    id: 14,
+    title: "Golden Hour",
+    client: "Sunset Magazine",
+    category: "Landscape",
+    year: "2023",
+    description: "Coastal landscapes during golden hour.",
+    role: "Landscape Photographer",
+    stack: ["Canon 5D IV", "16-35mm", "ND Filters"],
+    link: "https://example.com",
+    thumb: Img14,
+    original: Img14,
+    size: "1080x1080",
+    ratio: "3:3",
+    dimensions: { width: 1280, height: 850 },
+    details: {
+      camera: "Canon 5D IV",
+      focalLength: "24mm",
+      aperture: "f/11",
+      exposureTime: "1/30",
+      iso: "100"
+    }
+  },
 ];

@@ -85,8 +85,8 @@ const GridPreview = forwardRef(({
           {/* Original image */}
           <div className={`
             ${isMobile 
-              ? 'w-full max-w-[90%] mb-8' 
-              : 'w-1/2 pr-12 flex justify-end'
+              ? 'w-full mb-8' 
+              : 'w-1/2 pr-2 flex justify-end'
             }
           `}>
             <div className="relative inline-block">
@@ -96,8 +96,9 @@ const GridPreview = forwardRef(({
                 alt={selectedItem.title}
                 className={`
                   object-contain rounded-lg shadow-2xl
-                  ${isMobile ? 'max-h-[40vh] w-auto' : 'max-h-[80vh] max-w-full'}
+                  ${isMobile ? 'max-h-[60vh] w-auto' : 'max-h-[80vh] max-w-full'}
                 `}
+                // loading='lazy'
                 // style={{ opacity: 0 }}
               />
               
@@ -121,7 +122,7 @@ const GridPreview = forwardRef(({
             ref={contentRef}
             className={`
               ${isMobile 
-                ? 'w-full max-w-[90%] opacity-100' 
+                ? 'w-full opacity-100' 
                 : 'w-1/2 pl-12'
               }
             `}

@@ -1,6 +1,9 @@
 import { ArrowRight } from 'lucide-react';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Hero = () => {
+  const navigate = useNavigate();
+  
   return (
     <section className='pt-10 md:pt-14'>
       <div className='container mx-auto px-4 flex flex-col items-center justify-center flex-wrap gap-2'>
@@ -16,10 +19,12 @@ const Hero = () => {
           Photographer
         </h1>
 
-        <button className='uppercase bg-gray-700 hover:bg-linear-to-tr from-gray-500/50 via-gray-200/10 to-gray-200/30 py-3 px-5.5 text-xs font-medium flex items-center gap-1 border border-gray-600 cursor-pointer text-white rounded-sm hover:opacity-90 transition-all duration-300 group'> 
-          <span> Book An Appointment </span>
+        {/* <Link to="/book"> */}
+        <button onClick={() => { navigate("/book"); }} className='uppercase bg-gray-700 hover:bg-linear-to-tr from-gray-500/50 via-gray-200/10 to-gray-200/30 py-3 px-5.5 text-xs font-medium flex items-center gap-1 border border-gray-600 cursor-pointer text-white rounded-sm hover:opacity-90 transition-all duration-300 group'> 
+          <span>Book An Appointment</span>
           <ArrowRight size={12} className='group-hover:translate-x-1.5 transition duration-300' />
         </button>
+        {/* </Link> */}
       </div>
 
 
