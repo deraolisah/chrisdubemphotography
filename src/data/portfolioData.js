@@ -1,4 +1,17 @@
 import Eve from "../assets/Eve.jpeg";
+import Eve2 from "../assets/Eve-3.jpeg";
+
+import Mathys from "../assets/Mathys-3.jpeg";
+import Mathys2 from "../assets/Mathys-4.jpeg";
+
+import Ani from "../assets/Ani Abesadze.jpeg";
+
+import Barr from "../assets/Barr Livinus-10.jpeg";
+
+import Img1 from "../assets/Lota-4.jpeg";
+import Img2 from "../assets/IMG_7865.jpeg";
+import Img3 from "../assets/Collins-5.jpeg";
+import Img4 from "../assets/Image-4.jpeg";
 
 export const portfolioData = [
   {
@@ -11,8 +24,9 @@ export const portfolioData = [
     role: "Lead Photographer",
     stack: ["Sony A7R IV", "24-70mm GM", "Lightroom"],
     link: "https://example.com",
-    thumb: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600",
-    original: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1200",
+    thumb: Ani,
+    original: Ani,
+    // original: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1200",
     size: "1280x853",
     dimensions: { width: 1280, height: 853 },
     details: {
@@ -33,8 +47,9 @@ export const portfolioData = [
     role: "Portrait Photographer",
     stack: ["Canon R5", "85mm f/1.2", "Profoto"],
     link: "https://example.com",
-    thumb: Eve,
-    original: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=1200",
+    thumb: Img1,
+    original: Img1,
+    // original: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=1200",
     size: "958x1280",
     dimensions: { width: 958, height: 1280 },
     details: {
@@ -55,8 +70,9 @@ export const portfolioData = [
     role: "Fine Art Photographer",
     stack: ["Fujifilm GFX", "50mm", "Capture One"],
     link: "https://example.com",
-    thumb: "https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?w=600",
-    original: "https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?w=1200",
+    thumb: Eve2,
+    original: Eve2,
+    // original: "https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?w=1200",
     size: "837x1280",
     dimensions: { width: 837, height: 1280 },
     details: {
@@ -77,8 +93,8 @@ export const portfolioData = [
     role: "Street Photographer",
     stack: ["Leica M10", "28mm", "Silver Efex"],
     link: "https://example.com",
-    thumb: "https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=600",
-    original: "https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=1200",
+    thumb: Img4,
+    original: Img4,
     size: "1280x961",
     dimensions: { width: 1280, height: 961 },
     details: {
@@ -99,8 +115,9 @@ export const portfolioData = [
     role: "Product Photographer",
     stack: ["Phase One", "120mm", "Capture One"],
     link: "https://example.com",
-    thumb: "https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=600",
-    original: "https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=1200",
+    thumb: Img3,
+    original: Img3,
+    // original: "https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=1200",
     size: "1280x1131",
     dimensions: { width: 1280, height: 1131 },
     details: {
@@ -121,8 +138,9 @@ export const portfolioData = [
     role: "Portrait Photographer",
     stack: ["Nikon Z9", "50mm", "Natural Light"],
     link: "https://example.com",
-    thumb: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=600",
-    original: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=1200",
+    thumb: Img2,
+    original: Img2,
+    // original: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=1200",
     size: "1280x857",
     dimensions: { width: 1280, height: 857 },
     details: {
@@ -143,8 +161,8 @@ export const portfolioData = [
     role: "Architectural Photographer",
     stack: ["Hasselblad H6D", "35mm", "Photoshop"],
     link: "https://example.com",
-    thumb: "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600",
-    original: "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200",
+    thumb: Mathys2,
+    original: Mathys2,
     size: "1280x1280",
     dimensions: { width: 1280, height: 1280 },
     details: {
@@ -187,8 +205,8 @@ export const portfolioData = [
     role: "Drone Pilot",
     stack: ["DJI Mavic 3", "24mm", "Lightroom"],
     link: "https://example.com",
-    thumb: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600",
-    original: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200",
+    thumb: Mathys,
+    original: Mathys,
     size: "865x1280",
     dimensions: { width: 865, height: 1280 },
     details: {
@@ -209,8 +227,8 @@ export const portfolioData = [
     role: "Macro Photographer",
     stack: ["Olympus OM-D", "60mm Macro", "Focus Stacking"],
     link: "https://example.com",
-    thumb: "https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=600",
-    original: "https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=1200",
+    thumb: Barr,
+    original: Barr,
     size: "1280x1280",
     dimensions: { width: 1280, height: 1280 },
     details: {

@@ -19,6 +19,12 @@ const GridPreview = forwardRef(({
 
   useEffect(() => {
     if (isExpanded && selectedItem && previewRef.current) {
+      // Animate image in
+      gsap.fromTo(originalImageRef.current,
+        { opacity: 0 },
+        { opacity: 1, duration: 3.5, ease: 'power3.out' }
+      );
+
       // Animate content entrance
       const tl = gsap.timeline({ delay: 0.4 });
       
@@ -92,7 +98,7 @@ const GridPreview = forwardRef(({
                   object-contain rounded-lg shadow-2xl
                   ${isMobile ? 'max-h-[40vh] w-auto' : 'max-h-[80vh] max-w-full'}
                 `}
-                style={{ opacity: 0 }}
+                // style={{ opacity: 0 }}
               />
               
               {/* Image metadata overlay - mobile only */}

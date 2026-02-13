@@ -7,7 +7,7 @@ import Home from "../pages/Home.jsx";
 import About from "../pages/About.jsx";
 // import Journal from "../pages/Journal.jsx";
 import Contact from "../pages/Contact.jsx";
-import Portfolio from "../pages/Portfolio.jsx";
+// import Portfolio from "../pages/Portfolio.jsx";
 
 
 function AppRoutes() {
@@ -18,7 +18,7 @@ function AppRoutes() {
         <Route path="/" element={<Home /> } />      
         <Route path="/about" element={<About /> } />      
         {/* <Route path="/journal" element={<Journal /> } />      */}
-        <Route path="/portfolio" element={<Portfolio /> } />      
+        {/* <Route path="/portfolio" element={<Portfolio /> } />       */}
         <Route path="/contact" element={<Contact /> } />      
       </Routes>
       <Footer />

@@ -47,7 +47,7 @@ const GridItem = ({ item, onClick, isSelected }) => {
           ref={imgRef}
           src={item.thumb}
           alt={item.title}
-          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${
+          className={`absolute inset-0 w-full h-full object-cover object-top transition-opacity duration-500 ${
             isLoaded ? 'opacity-100' : 'opacity-0'
           }`}
           loading="lazy"
