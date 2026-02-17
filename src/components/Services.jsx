@@ -43,7 +43,7 @@ const Services = () => {
                 className={`flex-1 p-4 border-b border-gray-200 last:border-b-0 transition-all duration-300 group cursor-pointer ${
                   activeIndex === index 
                     ? 'bg-primary text-white' 
-                    : 'hover:bg-gray-100 text-gray-800'
+                    : 'hover:bg-primary/10 text-gray-800'
                 }`}
               >
                 <div className="flex items-center h-full">
@@ -59,7 +59,7 @@ const Services = () => {
                       Click to view details →
                     </p> */}
                     <p className={`flex md:hidden text-sm md:text-base transition-all duration-300 ${
-                      activeIndex === index ? 'text-gray-200' : 'text-gray-600'
+                      activeIndex === index ? 'text-gray-100' : 'text-gray-600'
                     }`}>
                       {/* Click to view details → */}
                       {activeIndex === index 

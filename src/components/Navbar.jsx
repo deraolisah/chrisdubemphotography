@@ -28,7 +28,7 @@ const Navbar = () => {
   // }, [modalOpened]);
 
   return (
-    <nav className='container mx-auto px-4 flex items-center justify-between h-12 md:h-20 bg-dark fixed z-50 top-0 md:relative'>
+    <nav className='container mx-auto px-4 flex items-center justify-between h-12 md:h-20 backdrop-blur-sm bg-dark/92 fixed z-50 top-0 md:relative'>
       <Link to='/' className="" onClick={handleLinkClick}>
         <img src={logo} alt='' className='h-5 md:h-6' />
       </Link>
@@ -82,7 +82,7 @@ const Navbar = () => {
 
 
       {/* {isMenuOpen && ( */}
-        <div className={`md:hidden bg-dark w-full h-screen absolute z-100 top-12 left-0 transition-all duration-500 ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}>
+        <div className={`md:hidden bg-dark/99 w-full h-screen absolute z-100 top-12 left-0 transition-all duration-500 ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}>
           <ul className='uppercase h-full flex flex-col items-center justify-between text-sm py-4'>
             <span></span>
             <span className='flex flex-col items-center gap-6'>
