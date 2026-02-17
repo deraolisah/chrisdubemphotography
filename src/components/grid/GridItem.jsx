@@ -1,5 +1,6 @@
 import React, { useRef, useCallback, useState } from 'react';
 import gsap from 'gsap';
+import { ArrowUpRight } from 'lucide-react';
 
 const GridItem = ({ item, onClick, isSelected }) => {
   const imgRef = useRef(null);
@@ -58,8 +59,8 @@ const GridItem = ({ item, onClick, isSelected }) => {
         {/* Overlay */}
         <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
           <div className="absolute bottom-0 left-0 right-0 p-4">
-            <h3 className="text-white font-semibold text-lg mb-1 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-              {item.title}
+            <h3 className="text-white font-semibold text-lg mb-1 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 flex items-center gap-1">
+              {item.title} <ArrowUpRight size={18} strokeWidth={1} />
             </h3>
             <p className="text-gray-300 text-sm transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-75">
               {item.client} • {item.year}
@@ -69,7 +70,7 @@ const GridItem = ({ item, onClick, isSelected }) => {
 
         {/* Category badge */}
         <div className="absolute top-4 left-4">
-          <span className="px-3 py-1 bg-black/50 backdrop-blur-sm text-white text-xs rounded-full border border-white/20">
+          <span className="px-3 py-1 bg-black/50 backdrop-blur-sm text-white text-xs rounded-full border border-white/20 capitalize">
             {item.category}
           </span>
         </div>

@@ -139,12 +139,12 @@ const GridPreview = forwardRef(({
               href={selectedItem.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 text-white rounded-full transition-all duration-300 mb-8 group"
+              className="inline-flex items-center gap-2 px-6 py-2 bg-white/10 hover:bg-white/20 text-white rounded-full transition-all duration-300 mb-8 group"
             >
               Live Preview
               <ArrowUpRight 
                 size={18} 
-                className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" 
+                className="group-hover:translate-x-1.5 group-hover:-translate-y-0.5 transition-transform" 
               />
             </a>
 
@@ -173,24 +173,24 @@ const GridPreview = forwardRef(({
               <div className="mt-8 pt-8 border-t border-white/20">
                 <h4 className="text-white/60 text-xs uppercase tracking-wider mb-4">Camera Settings</h4>
                 <div className="flex flex-wrap gap-6">
-                  <div className="flex items-center gap-2 text-white/80">
-                    <Camera size={16} className="text-green-400" />
+                  <div className="flex items-center gap-2 text-white" title='camera'>
+                    <Camera size={18} className="text-primary" />
                     <span className="text-sm">{selectedItem.details.camera}</span>
                   </div>
-                  <div className="flex items-center gap-2 text-white/80">
-                    <FocalLength size={16} className="text-primary" />
+                  <div className="flex items-center gap-2 text-white" title='focal length'>
+                    <FocalLength size={18} className="text-primary" />
                     <span className="text-sm">{selectedItem.details.focalLength}</span>
                   </div>
-                  <div className="flex items-center gap-2 text-white/80">
-                    <Aperture size={16} className="text-green-400" />
+                  <div className="flex items-center gap-2 text-white" title='aperture'>
+                    <Aperture size={18} className="text-primary" />
                     <span className="text-sm">{selectedItem.details.aperture}</span>
                   </div>
-                  <div className="flex items-center gap-2 text-white/80">
-                    <ExposureTime size={16} className="text-green-400" />
+                  <div className="flex items-center gap-2 text-white" title='exposure'>
+                    <ExposureTime size={18} className="text-primary" />
                     <span className="text-sm">{selectedItem.details.exposureTime}</span>
                   </div>
-                  <div className="flex items-center gap-2 text-white/80">
-                    <Iso size={16} className="text-green-400" />
+                  <div className="flex items-center gap-2 text-white" title='iso'>
+                    <Iso size={18} className="text-primary" />
                     <span className="text-sm">ISO {selectedItem.details.iso}</span>
                   </div>
                 </div>

@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="flex flex-col gap-2">
           <img src={logo} alt="" className="w-40 object-cover mb-2"/>
           <p className="text-gray-400">
-            Professional personal branding and corporate photography for leaders, teams, and growing businesses.
+            Professional personal branding and corporate photography for leaders, teams, growing brands/businesses.
           </p>
         </div>
 
@@ -17,9 +17,9 @@ const Footer = () => {
           <h4 className="font-medium mb-2 uppercase">Quick Links</h4>
           <div className="flex flex-col gap-2 text-gray-400">
             <Link to="/">Home</Link>
-            <Link to="/services">Services</Link>
             <Link to="/about">About</Link>
             <Link to="/book">Book</Link>
+            <Link to="/contact">Contact</Link>
           </div>
         </div>
 

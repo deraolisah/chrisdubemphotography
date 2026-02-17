@@ -13,7 +13,7 @@ const Hero = () => {
           Photographer
         </h1> */}
 
-        <h1 className='text-2xl sm:text-4xl md:text-5xl lg:text-[60px] text-center font-medium uppercase leading-none tracking-tight mb-2'> 
+        <h1 className='text-2xl sm:text-4xl md:text-5xl lg:text-[60px] text-center font-semibold md:font-medium uppercase leading-none tracking-tight mb-2'> 
           The Personal Branding
           <br/>
           Photographer
@@ -21,7 +21,7 @@ const Hero = () => {
         <p className='text-center text-sm md:text-base'> I capture authentic photography that positions you as the authority in your field. </p>
 
         {/* <Link to="/book"> */}
-        <button onClick={() => { navigate("/book"); }} className='uppercase bg-primary text-white py-3 px-5.5 text-xs font-medium flex items-center gap-1 cursor-pointer rounded-sm hover:opacity-90 transition-all duration-300 group'> 
+        <button onClick={() => { navigate("/book"); }} className='uppercase bg-primary text-white py-3 px-5.5 text-xs font-medium flex items-center gap-1 cursor-pointer rounded-full hover:opacity-90 transition-all duration-300 group'> 
           <span>Book An Appointment</span>
           <ArrowRight size={12} className='group-hover:translate-x-1.5 transition-all duration-300' />
         </button>
@@ -35,7 +35,7 @@ const Hero = () => {
 
 
 
-      <div className='container md:mt-14 mt-10 my-3'>     
+      <div className='container md:mt-14 mt-10 mb-3'>     
         <div className='flex items-center justify-between gap-1 text-xs md:text-sm uppercase'>
           <div className='w-full text-start'> 7+ YEARS EXPERIENCE </div>
           <div className='w-full text-center'> 70+ Photos CAPTURED </div>

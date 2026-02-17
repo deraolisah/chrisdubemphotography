@@ -27,7 +27,7 @@ const Services = () => {
   ];
 
   return (
-    <section className="pt-16 md:pt-20">
+    <section className="py-12 md:py-20">
       <div className="container mx-auto px-4">
         
         <div className="flex flex-col lg:flex-row bg-white lg:h-120 overflow-hidden">
@@ -51,7 +51,7 @@ const Services = () => {
                       {service.title}
                     </h3>
                     <p className={`hidden md:flex text-sm md:text-base transition-all duration-300 ${
-                      activeIndex === index ? 'text-gray-300' : 'text-gray-600'
+                      activeIndex === index ? 'text-gray-200' : 'text-gray-600'
                     }`}>
                       Click to view details →
                     </p>

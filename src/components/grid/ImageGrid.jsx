@@ -87,7 +87,7 @@ const ImageGrid = ({ items }) => {
     <>
       <div 
         ref={gridRef}
-        className={`relative transition-opacity duration-500 ${gridReady ? 'opacity-100' : 'opacity-0'}`}
+        className={`relative pb-12 md:pb-20 transition-opacity duration-500 ${gridReady ? 'opacity-100' : 'opacity-0'}`}
       >
         {/* True Masonry Layout - Flexbox column-based */}
         <div className="flex flex-row gap-4">

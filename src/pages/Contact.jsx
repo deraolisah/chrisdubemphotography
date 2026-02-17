@@ -6,8 +6,8 @@ const Contact = () => {
     <section className="container mx-auto px-4 py-16">
       {/* Heading */}
       <div className="max-w-2xl mx-auto text-center mb-12">
-        <h1 className="text-4xl font-bold mb-4">Let’s Work Together</h1>
-        <p className="text-gray-500">
+        <h1 className="text-4xl font-bold mb-4"> Write To Me </h1>
+        <p className="text-gray-300">
           Have a project in mind, a question, or just want to say hi?
           Fill out the form below and I’ll get back to you shortly.
         </p>
@@ -59,7 +59,7 @@ const Contact = () => {
         <div className="md:col-span-2 text-center flex items-center justify-center mt-4">
           <button
             type="submit"
-            className="bg-primary text-white px-8 py-3 rounded-sm hover:opacity-90 transition flex items-center gap-2"
+            className="bg-primary text-white px-8 py-3 rounded-full hover:opacity-90 transition flex items-center gap-2 cursor-pointer"
           >
             Send Message
             <Send size={18} />
