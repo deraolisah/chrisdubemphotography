@@ -27,7 +27,7 @@ const Services = () => {
   ];
 
   return (
-    <section className="py-12 md:py-25">
+    <section className="pt-16 md:pt-20">
       <div className="container mx-auto px-4">
         
         <div className="flex flex-col lg:flex-row bg-white lg:h-120 overflow-hidden">
@@ -61,7 +61,7 @@ const Services = () => {
                       {/* Click to view details → */}
                       {activeIndex === index 
                         ? service.description 
-                        : "Click to view details →"
+                        : ""
                       }
                     </p>
                   </div>

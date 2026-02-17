@@ -1,31 +1,9 @@
-
-// import Hero from '../components/Hero';
-// import Gallery from '../components/Gallery';
-// // import Caption from '../components/Caption';
-// import Services from '../components/Services';
-
-// const Home = () => {
-//   return (
-//     <>      
-//       <Hero />
-
-//       <Gallery />
-
-//       {/* <Caption /> */}
-
-//       <Services />
-//     </>
-//   )
-// }
-
-// export default Home;
-
-
 import React from 'react';
+import { portfolioData } from '../data/portfolioData';
 import Hero from "../components/Hero.jsx";
 import ImageGrid from '../components/grid/ImageGrid.jsx';
-import { portfolioData } from '../data/portfolioData';
-// import './App.css';
+import HowItWorks from '../components/HowItWorks.jsx';
+import Services from "../components/Services.jsx";
 
 const Home = () => {
   return (
@@ -36,6 +14,10 @@ const Home = () => {
       <main className="container">
         <ImageGrid items={portfolioData} />
       </main>
+
+      <HowItWorks />
+
+      <Services />
     </>
   );
 }

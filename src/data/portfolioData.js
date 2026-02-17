@@ -1,19 +1,47 @@
 
 
+import MiniImg1 from "../assets/mini/1.jpeg";
 import Img1 from "../assets/1.jpeg";
+
+import MiniImg2 from "../assets/mini/2.jpeg";
 import Img2 from "../assets/2.jpeg";
+
+import MiniImg3 from "../assets/mini/3.jpeg";
 import Img3 from "../assets/3.jpeg";
+
+import MiniImg4 from "../assets/mini/4.jpeg";
 import Img4 from "../assets/4.jpeg";
+
+import MiniImg5 from "../assets/mini/5.jpeg";
 import Img5 from "../assets/5.jpeg";
+
+import MiniImg6 from "../assets/mini/6.jpg";
 import Img6 from "../assets/6.jpeg";
+
+import MiniImg7 from "../assets/mini/7.jpeg";
 import Img7 from "../assets/7.jpeg";
+
+import MiniImg8 from "../assets/mini/8.jpeg";
 import Img8 from "../assets/8.jpeg";
+
+import MiniImg9 from "../assets/mini/9.jpeg";
 import Img9 from "../assets/9.jpeg";
+
+import MiniImg10 from "../assets/mini/10.jpeg";
 import Img10 from "../assets/10.jpeg";
+
+import MiniImg11 from "../assets/mini/11.jpeg";
 import Img11 from "../assets/11.jpeg";
+
+import MiniImg12 from "../assets/mini/12.jpeg";
 import Img12 from "../assets/12.jpeg";
+
+import MiniImg13 from "../assets/mini/13.jpeg";
 import Img13 from "../assets/13.jpeg";
+
+import MiniImg14 from "../assets/mini/14.jpeg";
 import Img14 from "../assets/14.jpeg";
+
 
 
 export const portfolioData = [
@@ -27,7 +55,7 @@ export const portfolioData = [
     role: "Lead Photographer",
     stack: ["Sony A7R IV", "24-70mm GM", "Lightroom"],
     link: "https://example.com",
-    thumb: Img1,
+    thumb: MiniImg1,
     original: Img1,
     // original: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1200",
     // size: "1280x853",
@@ -52,7 +80,7 @@ export const portfolioData = [
     role: "Portrait Photographer",
     stack: ["Canon R5", "85mm f/1.2", "Profoto"],
     link: "https://example.com",
-    thumb: Img2,
+    thumb: MiniImg2,
     original: Img2,
     // original: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=1200",
     // size: "958x1280",
@@ -77,7 +105,7 @@ export const portfolioData = [
     role: "Fine Art Photographer",
     stack: ["Fujifilm GFX", "50mm", "Capture One"],
     link: "https://example.com",
-    thumb: Img3,
+    thumb: MiniImg3,
     original: Img3,
     // original: "https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?w=1200",
     // size: "837x1280",
@@ -102,7 +130,7 @@ export const portfolioData = [
     role: "Street Photographer",
     stack: ["Leica M10", "28mm", "Silver Efex"],
     link: "https://example.com",
-    thumb: Img4,
+    thumb: MiniImg4,
     original: Img4,
     // size: "1280x961",
     size: "1080x720",
@@ -126,7 +154,7 @@ export const portfolioData = [
     role: "Product Photographer",
     stack: ["Phase One", "120mm", "Capture One"],
     link: "https://example.com",
-    thumb: Img5,
+    thumb: MiniImg5,
     original: Img5,
     // original: "https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=1200",
     // size: "1280x1131",
@@ -151,7 +179,7 @@ export const portfolioData = [
     role: "Portrait Photographer",
     stack: ["Nikon Z9", "50mm", "Natural Light"],
     link: "https://example.com",
-    thumb: Img6,
+    thumb: MiniImg6,
     original: Img6,
     // original: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=1200",
     // size: "1280x857",
@@ -176,7 +204,7 @@ export const portfolioData = [
     role: "Architectural Photographer",
     stack: ["Hasselblad H6D", "35mm", "Photoshop"],
     link: "https://example.com",
-    thumb: Img7,
+    thumb: MiniImg7,
     original: Img7,
     size: "1080x1080",
     ratio: "3:3",
@@ -199,7 +227,7 @@ export const portfolioData = [
     role: "Sports Photographer",
     stack: ["Sony A1", "400mm", "Fast Shutter"],
     link: "https://example.com",
-    thumb: Img8,
+    thumb: MiniImg8,
     original: Img8,
     size: "1080x1440",
     ratio: "3:4",
@@ -222,7 +250,7 @@ export const portfolioData = [
     role: "Drone Pilot",
     stack: ["DJI Mavic 3", "24mm", "Lightroom"],
     link: "https://example.com",
-    thumb: Img9,
+    thumb: MiniImg9,
     original: Img9,
     size: "865x1280",
     dimensions: { width: 865, height: 1280 },
@@ -244,7 +272,7 @@ export const portfolioData = [
     role: "Macro Photographer",
     stack: ["Olympus OM-D", "60mm Macro", "Focus Stacking"],
     link: "https://example.com",
-    thumb: Img10,
+    thumb: MiniImg10,
     original: Img10,
     size: "1080x1080",
     ratio: "3:3",
@@ -267,7 +295,7 @@ export const portfolioData = [
     role: "Landscape Photographer",
     stack: ["Canon 5D IV", "16-35mm", "ND Filters"],
     link: "https://example.com",
-    thumb: Img11,
+    thumb: MiniImg11,
     original: Img11,
     size: "1080x1440",
     ratio: "3:4",
@@ -290,7 +318,7 @@ export const portfolioData = [
     role: "Landscape Photographer",
     stack: ["Canon 5D IV", "16-35mm", "ND Filters"],
     link: "https://example.com",
-    thumb: Img12,
+    thumb: MiniImg12,
     original: Img12,
     size: "1080x1800",
     ratio: "3:5",
@@ -313,7 +341,7 @@ export const portfolioData = [
     role: "Landscape Photographer",
     stack: ["Canon 5D IV", "16-35mm", "ND Filters"],
     link: "https://example.com",
-    thumb: Img13,
+    thumb: MiniImg13,
     original: Img13,
     size: "1280x850",
     dimensions: { width: 1280, height: 850 },
@@ -335,7 +363,7 @@ export const portfolioData = [
     role: "Landscape Photographer",
     stack: ["Canon 5D IV", "16-35mm", "ND Filters"],
     link: "https://example.com",
-    thumb: Img14,
+    thumb: MiniImg14,
     original: Img14,
     size: "1080x1080",
     ratio: "3:3",
