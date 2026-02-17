@@ -98,7 +98,7 @@ const BookingTabs = () => {
                 key={tab.id}
                 onClick={() => isAccessible && dispatch({ type: 'SET_TAB', payload: tab.id })}
                 className={`
-                  group relative w-full md:min-w-20 flex-1 py-4 px-4 text-center
+                  group relative w-full flex-1 py-4 px-1 text-center
                   transition-all duration-200
                   ${isAccessible ? 'cursor-pointer' : 'cursor-not-allowed opacity-30'}
                 `}

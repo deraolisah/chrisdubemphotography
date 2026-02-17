@@ -23,7 +23,7 @@ const Book = () => {
 
   return (
     <BookingProvider>
-      <div className="py-4 w-full bg-dark">
+      <div className="py-16 w-full bg-dark">
         {/* Mobile Menu Button - Only shows when sidebar is closed */}
         {!sidebarOpen && (
           <button
