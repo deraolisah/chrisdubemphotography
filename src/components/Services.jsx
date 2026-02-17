@@ -29,6 +29,9 @@ const Services = () => {
   return (
     <section className="py-12 md:py-20">
       <div className="container mx-auto px-4">
+        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-8 uppercase">
+          Services
+        </h2>
         
         <div className="flex flex-col lg:flex-row bg-white lg:h-120 overflow-hidden">
           {/* Left side - Accordion Titles */}
@@ -50,11 +53,11 @@ const Services = () => {
                     }`}>
                       {service.title}
                     </h3>
-                    <p className={`hidden md:flex text-sm md:text-base transition-all duration-300 ${
+                    {/* <p className={`hidden md:flex text-sm md:text-base transition-all duration-300 ${
                       activeIndex === index ? 'text-gray-200' : 'text-gray-600'
                     }`}>
                       Click to view details →
-                    </p>
+                    </p> */}
                     <p className={`flex md:hidden text-sm md:text-base transition-all duration-300 ${
                       activeIndex === index ? 'text-gray-200' : 'text-gray-600'
                     }`}>

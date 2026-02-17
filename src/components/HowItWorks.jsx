@@ -27,11 +27,11 @@ const HowItWorks = () => {
   return (
     <section className="py-12 md:py-20">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-8 md:mb-10 uppercase">
+        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-8 uppercase">
           How It Works
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
           {steps.map((step, i) => (
             <div key={i} className="border border-gray-700 p-4 md:p-6 rounded-sm">
               <div className="text-sm text-gray-400 mb-2 flex items-center gap-2">
