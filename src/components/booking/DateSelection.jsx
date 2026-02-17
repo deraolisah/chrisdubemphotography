@@ -65,7 +65,7 @@ const DateSelection = () => {
           className="text-white/60 hover:text-white flex items-center mx-auto gap-1"
         >
           <ChevronLeft size={16} />
-          Back to Packages
+          Back to Package
         </button>
 
         <div className="text-center">
@@ -136,7 +136,7 @@ const DateSelection = () => {
                   transition-all duration-200 relative
                   ${!isCurrentMonth && 'opacity-30'}
                   ${isSelected 
-                    ? 'bg-green-500 text-white' 
+                    ? 'bg-primary text-white' 
                     : isAvailable && isCurrentMonth && !isPast
                       ? 'bg-white/10 text-white hover:bg-white/20 cursor-pointer'
                       : 'bg-white/5 text-white/20 cursor-not-allowed'
@@ -164,7 +164,7 @@ const DateSelection = () => {
         {/* Legend */}
         <div className="flex items-center justify-center gap-6 mt-6 pt-4 border-t border-white/10">
           <div className="flex items-center gap-2">
-            <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+            <div className="w-3 h-3 bg-primary rounded-full"></div>
             <span className="text-xs text-white/60">Available</span>
           </div>
           <div className="flex items-center gap-2">
@@ -186,8 +186,8 @@ const DateSelection = () => {
       {state.selectedDate && (
         <div className="bg-white/5 rounded-lg p-4 animate-fadeIn">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-green-500/20 rounded-full flex items-center justify-center">
-              <Calendar className="text-green-400" size={20} />
+            <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
+              <Calendar className="text-primary" size={20} />
             </div>
             <div>
               <span className="text-white/60 text-sm">Selected Date</span>

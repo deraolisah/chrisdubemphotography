@@ -30,7 +30,7 @@ const TimeSelection = () => {
         className="text-white/60 hover:text-white flex items-center mx-auto gap-1"
       >
         <ChevronLeft size={16} />
-        Back to Dates
+        Back to Date
       </button>
 
       <div className="text-center">
@@ -53,7 +53,7 @@ const TimeSelection = () => {
               className={`
                 p-4 rounded-lg flex flex-col items-center transition-all duration-200
                 ${isSelected 
-                  ? 'bg-green-500 text-white' 
+                  ? 'bg-primary text-white' 
                   : 'bg-white/10 text-white hover:bg-white/20'
                 }
               `}

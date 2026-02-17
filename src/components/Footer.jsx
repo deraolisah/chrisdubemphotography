@@ -3,7 +3,7 @@ import logo from "../assets/logo-horizontal.png";
 
 const Footer = () => {
   return (
-    <footer className="py-12 border-t border-gray-800 bg-black mt-12">
+    <footer className="py-12 border-t border-gray-800 bg-black mt-16">
       <div className="container mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-sm">
 
         <div className="flex flex-col gap-2">

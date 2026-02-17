@@ -36,13 +36,13 @@ const PackageSelection = () => {
             className={`
               relative p-6 rounded-xl text-left flex flex-col items-start transition-all duration-300
               ${state.selectedPackage?.id === pkg.id 
-                ? 'bg-green-500/20 border-2 border-green-500' 
+                ? 'bg-primary/20 border-2 border-primary' 
                 : 'bg-white/5 border border-white/10 hover:bg-white/10'
               }
             `}
           >
             {state.selectedPackage?.id === pkg.id && (
-              <div className="absolute top-4 right-4 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+              <div className="absolute top-4 right-4 w-6 h-6 bg-primary rounded-full flex items-center justify-center">
                 <Check size={14} className="text-white" />
               </div>
             )}
@@ -65,7 +65,7 @@ const PackageSelection = () => {
             <ul className="space-y-2">
               {pkg.includes.map((item, i) => (
                 <li key={i} className="flex items-start gap-2 text-sm text-white/70">
-                  <Check size={14} className="text-green-400 mt-1 shrink-0" />
+                  <Check size={14} className="text-primary-alt mt-1 shrink-0" />
                   <span>{item}</span>
                 </li>
               ))}

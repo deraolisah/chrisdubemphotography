@@ -39,7 +39,7 @@ const Services = () => {
                 onClick={() => setActiveIndex(index)}
                 className={`flex-1 p-4 border-b border-gray-200 last:border-b-0 transition-all duration-300 group cursor-pointer ${
                   activeIndex === index 
-                    ? 'bg-blue-800 text-white' 
+                    ? 'bg-primary text-white' 
                     : 'hover:bg-gray-100 text-gray-800'
                 }`}
               >

@@ -10,7 +10,7 @@ const HowItWorks = () => {
     },
     {
       title: "Guided Photoshoot",
-      text: "During the session, I direct you every step of the way so you feel relaxed — no modeling experience needed."
+      text: "During the session, I direct you every step of the way so you feel relaxed. No modeling experience needed."
     },
     {
       title: "Selection & Delivery",

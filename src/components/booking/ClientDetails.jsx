@@ -57,7 +57,7 @@ const ClientDetails = () => {
         className="text-white/60 hover:text-white flex items-center mx-auto gap-1"
       >
         <ChevronLeft size={16} />
-        Back to Times
+        Back to Time
       </button>
 
       <div className="text-center">
@@ -130,7 +130,7 @@ const ClientDetails = () => {
 
         <button
           type="submit"
-          className="w-full bg-green-600 hover:bg-green-700 text-white py-4 rounded-lg font-medium flex items-center justify-center gap-2 transition-all duration-300"
+          className="w-full bg-primary hover:bg-primary-alt text-white py-4 rounded-lg font-medium flex items-center justify-center gap-2 transition-all duration-300"
         >
           Complete Booking
           <Send size={18} />

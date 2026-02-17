@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { TextAlignJustify } from 'lucide-react';
 import logo from "../assets/logo-horizontal.png";
 
@@ -13,6 +13,10 @@ const Navbar = () => {
       document.body.style.overflow = "auto";
     } 
   }, [isMenuOpen]);
+
+  const handleLinkClick = () => {
+    setIsMenuOpen(false);
+  }
 
   
   //   useEffect(() => {
@@ -51,23 +55,23 @@ const Navbar = () => {
       </button>
 
       <ul className='hidden md:flex items-center gap-6 uppercase text-sm'>
-        <li className=''><Link to="/"> Home </Link></li>
+        <li className=''><NavLink to="/" className={({ isActive }) => isActive ? "text-primary font-medium" : "text-gray-100"}> Home </NavLink></li>
         |
-        <li className=''><Link to="/about"> About </Link></li>
+        <li className=''><NavLink to="/about" className={({ isActive }) => isActive ? "text-primary font-medium" : "text-gray-100"}> About </NavLink></li>
         |
-        <li className=''><Link to="/book"> Book </Link></li>
+        <li className=''><NavLink to="/book" className={({ isActive }) => isActive ? "text-primary font-medium" : "text-gray-100"}> Book </NavLink></li>
         |
-        <li className=''><Link to="/contact"> Contact </Link></li>
+        <li className=''><NavLink to="/contact" className={({ isActive }) => isActive ? "text-primary font-medium" : "text-gray-100"}> Contact </NavLink></li>
       </ul>
 
 
       {/* {isMenuOpen && ( */}
         <div className={`md:hidden bg-dark w-full h-screen absolute z-100 top-12 left-0 transition-all duration-300 ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}>
           <ul className='flex flex-col items-center gap-6 uppercase text-sm py-4'>
-            <li className=''><Link to="/"> Home </Link></li>
-            <li className=''><Link to="/about"> About </Link></li>
-            <li className=''><Link to="/portfolio"> Portfolio </Link></li>
-            <li className=''><Link to="/contact"> Contact </Link></li>
+            <NavLink onClick={handleLinkClick} to="/" className={({ isActive }) => isActive ? "text-primary font-bold" : "text-gray-500"}> Home </NavLink>
+            <NavLink onClick={handleLinkClick} to="/about" className={({ isActive }) => isActive ? "text-primary font-bold" : "text-gray-500"}> About </NavLink>
+            <NavLink onClick={handleLinkClick} to="/portfolio" className={({ isActive }) => isActive ? "text-primary font-bold" : "text-gray-500"}> Portfolio </NavLink>
+            <NavLink onClick={handleLinkClick} to="/contact" className={({ isActive }) => isActive ? "text-primary font-bold" : "text-gray-500"}> Contact </NavLink>
           </ul>
         </div>
       {/* )} */}

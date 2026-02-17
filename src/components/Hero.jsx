@@ -21,9 +21,9 @@ const Hero = () => {
         <p className='text-center text-sm md:text-base'> I capture authentic photography that positions you as the authority in your field. </p>
 
         {/* <Link to="/book"> */}
-        <button onClick={() => { navigate("/book"); }} className='uppercase bg-gray-700 hover:bg-linear-to-tr from-gray-500/50 via-gray-200/10 to-gray-200/30 py-3 px-5.5 text-xs font-medium flex items-center gap-1 border border-gray-600 cursor-pointer text-white rounded-sm hover:opacity-90 transition-all duration-300 group'> 
+        <button onClick={() => { navigate("/book"); }} className='uppercase bg-primary text-white py-3 px-5.5 text-xs font-medium flex items-center gap-1 cursor-pointer rounded-sm hover:opacity-90 transition-all duration-300 group'> 
           <span>Book An Appointment</span>
-          <ArrowRight size={12} className='group-hover:translate-x-1.5 transition duration-300' />
+          <ArrowRight size={12} className='group-hover:translate-x-1.5 transition-all duration-300' />
         </button>
         {/* </Link> */}
       </div>

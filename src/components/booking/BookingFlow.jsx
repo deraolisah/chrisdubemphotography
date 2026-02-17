@@ -58,8 +58,8 @@ const BookingFlow = () => {
               <div key={step} className="flex flex-col items-center">
                 <div className={`
                   w-10 h-10 rounded-full flex items-center justify-center text-sm font-medium
-                  ${isActive ? 'bg-green-500 text-white' : ''}
-                  ${isCompleted ? 'bg-green-500/20 text-green-400' : 'bg-white/10 text-white/60'}
+                  ${isActive ? 'bg-primary text-white' : ''}
+                  ${isCompleted ? 'bg-primary/20 text-primary' : 'bg-white/10 text-white/60'}
                 `}>
                   {isCompleted ? '✓' : index + 1}
                 </div>
@@ -70,7 +70,7 @@ const BookingFlow = () => {
         </div>
         <div className="relative mt-2 h-1 bg-white/10 rounded-full">
           <div 
-            className="absolute h-full bg-green-500 rounded-full transition-all duration-500"
+            className="absolute h-full bg-primary rounded-full transition-all duration-500"
             style={{ 
               width: `${(Object.keys(steps).indexOf(state.currentStep) / (Object.keys(steps).length - 1)) * 100}%` 
             }}

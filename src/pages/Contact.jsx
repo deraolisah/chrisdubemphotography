@@ -21,7 +21,7 @@ const Contact = () => {
           <input
             type="text"
             placeholder="Your full name"
-            className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
+            className="w-full border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:border-primary"
           />
         </div>
 
@@ -31,7 +31,7 @@ const Contact = () => {
           <input
             type="email"
             placeholder="you@example.com"
-            className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
+            className="w-full border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:border-primary"
           />
         </div>
 
@@ -41,7 +41,7 @@ const Contact = () => {
           <input
             type="text"
             placeholder="Photography booking, collaboration, etc."
-            className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
+            className="w-full border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:border-primary"
           />
         </div>
 
@@ -51,18 +51,18 @@ const Contact = () => {
           <textarea
             rows="6"
             placeholder="Tell me about your project..."
-            className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
+            className="w-full border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:border-primary"
           />
         </div>
 
         {/* Button */}
-        <div className="md:col-span-2 text-center mt-4">
+        <div className="md:col-span-2 text-center flex items-center justify-center mt-4">
           <button
             type="submit"
-            className="bg-black text-white px-8 py-3 rounded-full hover:opacity-90 transition"
+            className="bg-primary text-white px-8 py-3 rounded-sm hover:opacity-90 transition flex items-center gap-2"
           >
             Send Message
-            <Send />
+            <Send size={18} />
           </button>
         </div>
       </form>

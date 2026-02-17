@@ -11,7 +11,9 @@
 
 
 @theme{
-  --color-primary: blue;
+  /* --color-primary: #DC143C; */
+  --color-primary: #C6B585;
+  --color-primary-alt: #C6AE6B;
   --color-dark: #1D1D1D;
 
 

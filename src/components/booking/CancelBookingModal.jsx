@@ -6,7 +6,7 @@ const CancelBookingModal = ({ isOpen, onClose, onConfirm }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-dark/80 backdrop-blur-sm">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-dark/60 backdrop-blur-sm">
       <div className="bg-dark border border-white/10 rounded-xl max-w-md w-full p-6 animate-fadeIn">
         <div className="flex justify-between items-start mb-4">
           <div className="w-12 h-12 bg-red-500/20 rounded-full flex items-center justify-center">

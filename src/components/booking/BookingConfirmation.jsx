@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react';
 import { useBooking, PACKAGES } from '../../context/BookingContext';
 import { format } from 'date-fns';
-import { Check, Calendar, Clock, Package, Mail, Phone, ArrowRight } from 'lucide-react';
+import { Check, Calendar, Clock, Package, Mail, Phone, ArrowRight, ChevronLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const BookingConfirmation = () => {
@@ -21,12 +21,16 @@ const BookingConfirmation = () => {
     return `${hour12}:${minutes} ${ampm}`;
   };
 
+  const handleBack = () => {
+    dispatch({ type: 'GO_BACK' });
+  };
+
   return (
     <div className="text-center space-y-6">
       {/* Success Animation */}
       <div className="flex justify-center">
-        <div className="w-20 h-20 bg-green-500/20 rounded-full flex items-center justify-center">
-          <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center">
+        <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center">
+          <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center">
             <Check size={32} className="text-white" />
           </div>
         </div>
@@ -44,7 +48,7 @@ const BookingConfirmation = () => {
       {/* Booking Reference */}
       <div className="bg-white/5 rounded-lg p-6 max-w-md mx-auto">
         <p className="text-white/60 text-sm mb-1">Booking Reference</p>
-        <p className="text-2xl font-mono font-bold text-green-400">
+        <p className="text-2xl font-mono font-bold text-primary">
           {state.bookingReference || 'PHOTO-' + Math.random().toString(36).substr(2, 8).toUpperCase()}
         </p>
       </div>
@@ -54,7 +58,7 @@ const BookingConfirmation = () => {
         <h3 className="text-white font-semibold text-lg mb-4">Booking Details</h3>
         
         <div className="flex items-start gap-3">
-          <Package className="text-green-400 mt-1" size={18} />
+          <Package className="text-primary mt-1" size={18} />
           <div>
             <p className="text-white/60 text-sm">Package</p>
             <p className="text-white font-medium">{state.selectedPackage?.name}</p>
@@ -63,7 +67,7 @@ const BookingConfirmation = () => {
         </div>
 
         <div className="flex items-start gap-3">
-          <Calendar className="text-green-400 mt-1" size={18} />
+          <Calendar className="text-primary mt-1" size={18} />
           <div>
             <p className="text-white/60 text-sm">Date</p>
             <p className="text-white font-medium">
@@ -73,7 +77,7 @@ const BookingConfirmation = () => {
         </div>
 
         <div className="flex items-start gap-3">
-          <Clock className="text-green-400 mt-1" size={18} />
+          <Clock className="text-primary mt-1" size={18} />
           <div>
             <p className="text-white/60 text-sm">Time</p>
             <p className="text-white font-medium">{formatTime(state.selectedTime)}</p>
@@ -81,7 +85,7 @@ const BookingConfirmation = () => {
         </div>
 
         <div className="flex items-start gap-3">
-          <Mail className="text-green-400 mt-1" size={18} />
+          <Mail className="text-primary mt-1" size={18} />
           <div>
             <p className="text-white/60 text-sm">Confirmation Sent To</p>
             <p className="text-white font-medium">{state.clientInfo?.email}</p>
@@ -89,7 +93,7 @@ const BookingConfirmation = () => {
         </div>
 
         <div className="flex items-start gap-3">
-          <Phone className="text-green-400 mt-1" size={18} />
+          <Phone className="text-primary mt-1" size={18} />
           <div>
             <p className="text-white/60 text-sm">Contact Number</p>
             <p className="text-white font-medium">{state.clientInfo?.phone || 'Not provided'}</p>
@@ -110,19 +114,26 @@ const BookingConfirmation = () => {
       </div>
 
       {/* Actions */}
-      <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-        <Link
+      <div className="flex flex-col sm:flex-row gap-6 justify-center pt-4">
+        {/* <Link
           to="/"
           className="px-6 py-3 bg-white/10 hover:bg-white/20 text-white rounded-lg transition flex items-center justify-center gap-2"
         >
           Return Home
-        </Link>
+        </Link> */}
+        <button
+          onClick={handleBack}
+          className="text-white/60 hover:text-white flex items-center gap-1"
+        >
+          <ChevronLeft size={16} />
+          Back to Details
+        </button>
         <button
           onClick={() => {
             dispatch({ type: 'RESET_BOOKING' });
             window.scrollTo({ top: 0, behavior: 'smooth' });
           }}
-          className="px-6 py-3 bg-green-600 hover:bg-green-700 text-white rounded-lg transition flex items-center justify-center gap-2"
+          className="px-6 py-3 bg-primary text-white rounded-lg transition flex items-center justify-center gap-2"
         >
           Book Another Session
           <ArrowRight size={16} />
