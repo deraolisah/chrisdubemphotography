@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="flex flex-col gap-2">
           <img src={logo} alt="" className="w-40 object-cover mb-2"/>
           <p className="text-gray-400">
-            Professional personal branding and corporate photography for leaders, teams, growing brands/businesses.
+            Professional personal branding and corporate photography for leaders, teams, and growing brands/businesses.
           </p>
         </div>
 
@@ -48,7 +48,7 @@ const Footer = () => {
 
       <hr className="flex my-10 h-px border-0 bg-gray-800"/>
 
-      <div className="my-4 mx-auto text-center text-sm text-gray-400 flex items-center justify-center gap-4">
+      <div className="my-4 mx-auto text-center text-sm text-gray-400 flex items-center justify-center gap-4 flex-wrap">
         <p> Data Protection  </p>
         <p> Imprint </p>
         <p> Accessibility </p>
