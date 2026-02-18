@@ -31,6 +31,7 @@ const GridItem = ({ item, onClick, isSelected }) => {
         isSelected ? 'opacity-0 scale-95' : 'opacity-100'
       }`}
       onClick={handleClick}
+      // data-cursor="true"
     >
       <div 
         className="relative w-full overflow-hidden bg-gray-900"

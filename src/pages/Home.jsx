@@ -4,10 +4,12 @@ import Hero from "../components/Hero.jsx";
 import ImageGrid from '../components/grid/ImageGrid.jsx';
 import HowItWorks from '../components/HowItWorks.jsx';
 import Services from "../components/Services.jsx";
+// import SimpleCursor from '../components/ui/SimpleCursor.jsx'; 
 
 const Home = () => {
   return (
     <>
+      {/* <SimpleCursor /> */}
       <Hero />
 
 
