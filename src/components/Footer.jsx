@@ -17,24 +17,24 @@ const Footer = () => {
         <div className="flex flex-col gap-3">
           <h4 className="font-medium mb-2 uppercase">Quick Links</h4>
           <div className="flex flex-col gap-2 text-gray-400">
-            <Link className="hover:text-primary" to="/">Home</Link>
-            <Link className="hover:text-primary" to="/about">About</Link>
-            <Link className="hover:text-primary" to="/book">Book</Link>
-            <Link className="hover:text-primary" to="/contact">Contact</Link>
+            <Link onClick={() => { scrollTo(0,0) }} className="hover:text-primary" to="/">Home</Link>
+            <Link onClick={() => { scrollTo(0,0) }} className="hover:text-primary" to="/about">About</Link>
+            <Link onClick={() => { scrollTo(0,0) }} className="hover:text-primary" to="/book">Book</Link>
+            <Link onClick={() => { scrollTo(0,0) }} className="hover:text-primary" to="/contact">Contact</Link>
           </div>
         </div>
 
         <div className="col-span-1 sm:col-span-2 md:col-span-1 flex flex-col gap-3">
           <h4 className="font-medium mb-2 uppercase">Contact</h4>
-          <a href="#" target="_blank" className="flex items-center gap-2 text-gray-400 hover:text-primary truncate">
+          <a href="mailto:chrisdubemphotography@gmail.com" target="_blank" className="flex items-center gap-2 text-gray-400 hover:text-primary truncate">
             <Mail size={16} />
-            hello@chrisdubemphotography.com
+            chrisdubemphotography@gmail.com
           </a>
           <a href="#" className="flex items-center gap-2 text-gray-400 hover:text-primary">
             <MapPin size={16} />
             Basel, Switzerland
           </a>
-          <a href="https://instagram.com/" target="_blank" className="flex items-center gap-2 text-gray-400 hover:text-primary">
+          <a href="https://instagram.com/chrisdubem.studios" target="_blank" className="flex items-center gap-2 text-gray-400 hover:text-primary">
             <Instagram size={16} />
             Instagram
           </a>
