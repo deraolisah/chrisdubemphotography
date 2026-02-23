@@ -33,7 +33,7 @@ const Services = () => {
           Services
         </h2>
         
-        <div className="flex flex-col lg:flex-row bg-white lg:h-120 overflow-hidden">
+        <div className="flex flex-col lg:flex-row bg-black lg:h-120 overflow-hidden">
           {/* Left side - Accordion Titles */}
           <div className="lg:w-1/2 flex flex-col">
             {services.map((service, index) => (
@@ -43,7 +43,7 @@ const Services = () => {
                 className={`flex-1 p-4 border-b border-gray-200 last:border-b-0 transition-all duration-300 group cursor-pointer ${
                   activeIndex === index 
                     ? 'bg-primary text-white' 
-                    : 'hover:bg-primary/10 text-gray-800'
+                    : 'hover:bg-primary/10 text-gray-400'
                 }`}
               >
                 <div className="flex items-center h-full">

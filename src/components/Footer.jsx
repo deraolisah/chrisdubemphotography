@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/logo-horizontal.png";
-import { Instagram, Linkedin, Mail, MapPin } from "lucide-react";
+import { Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -29,6 +29,10 @@ const Footer = () => {
           <a href="mailto:chrisdubemphotography@gmail.com" target="_blank" className="flex items-center gap-2 text-gray-400 hover:text-primary truncate">
             <Mail size={16} />
             chrisdubemphotography@gmail.com
+          </a>
+          <a href="tel:+41779033159" target="_blank" className="flex items-center gap-2 text-gray-400 hover:text-primary truncate">
+            <Phone size={16} />
+            +41779033159
           </a>
           <a href="#" className="flex items-center gap-2 text-gray-400 hover:text-primary">
             <MapPin size={16} />
