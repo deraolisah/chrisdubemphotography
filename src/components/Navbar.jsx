@@ -28,9 +28,9 @@ const Navbar = () => {
   // }, [modalOpened]);
 
   return (
-    <nav className='container mx-auto px-4 flex items-center justify-between h-12 md:h-20 backdrop-blur-sm bg-dark/92 fixed z-50 top-0 md:relative'>
+    <nav className='container mx-auto px-4 flex items-center justify-between min-h-12 md:h-16 backdrop-blur-sm bg-dark/92 fixed z-50 top-0 md:relative'>
       <Link to='/' className="" onClick={handleLinkClick}>
-        <img src={logo} alt='' className='h-5 md:h-6' />
+        <img src={logo} alt='' className='h-5 md:h-6.5' />
       </Link>
 
 

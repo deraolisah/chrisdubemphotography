@@ -14,9 +14,9 @@ const Hero = () => {
         </h1> */}
 
         <h1 className='text-2xl sm:text-4xl md:text-5xl lg:text-[60px] text-center font-semibold md:font-medium uppercase leading-none tracking-tight mb-2'> 
-          The Personal Branding
+          The Corporate & Personal
           <br/>
-          Photographer
+          Branding Photographer
         </h1>
         <p className='hidden md:flex text-center text-sm md:text-base'> I capture authentic photography that positions you as the authority in your field. </p>
 
@@ -32,7 +32,7 @@ const Hero = () => {
       <div className='container mt-14 mb-3'>     
         <div className='flex items-center justify-between gap-1 text-xs md:text-sm uppercase'>
           <div className='w-full text-start'> 7+ YEARS EXPERIENCE </div>
-          <div className='w-full text-center'> 70+ Photos CAPTURED </div>
+          <div className='w-full text-center'> 200+ Photos CAPTURED </div>
           <div className='w-full text-end uppercase'> Basel, Switzerland </div>
         </div>   
       </div>

@@ -16,8 +16,8 @@ const Footer = () => {
 
         <div className="flex flex-col gap-3">
           <h4 className="font-medium mb-2 uppercase">Quick Links</h4>
-          <div className="flex flex-col gap-2 text-gray-400">
-            <Link onClick={() => { scrollTo(0,0) }} className="hover:text-primary" to="/">Home</Link>
+          <div className="flex flex-col gap-2 text-gray-400 hover:text-primary">
+            <Link onClick={() => { scrollTo(0,0) }} className="hover:text-primary!" to="/">Home</Link>
             <Link onClick={() => { scrollTo(0,0) }} className="hover:text-primary" to="/about">About</Link>
             <Link onClick={() => { scrollTo(0,0) }} className="hover:text-primary" to="/book">Book</Link>
             <Link onClick={() => { scrollTo(0,0) }} className="hover:text-primary" to="/contact">Contact</Link>

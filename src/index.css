@@ -26,7 +26,6 @@
 @utility container {
   margin-inline: auto;
   padding-inline: 16px;
-  /* background: red; */
   max-width: 1920px;
 }
 
@@ -43,6 +42,7 @@ body{
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
+  position: fixed;
 }
 ::-webkit-scrollbar-track {
   background: var(--color-dark);
@@ -61,8 +61,8 @@ body{
 /* Add to your index.css or global styles */
 /* * {
   cursor: auto;
-} */
-/* 
+}
+
 .custom-cursor {
   width: 80px;
   height: 80px;

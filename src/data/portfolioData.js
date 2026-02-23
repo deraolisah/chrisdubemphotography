@@ -42,6 +42,18 @@ import Img13 from "../assets/13.jpeg";
 import MiniImg14 from "../assets/mini/14.jpeg";
 import Img14 from "../assets/14.jpeg";
 
+import MiniImg15 from "../assets/mini/15.jpeg";
+import Img15 from "../assets/15.jpeg";
+
+import MiniImg16 from "../assets/mini/16.jpg";
+import Img16 from "../assets/16.jpeg";
+
+import MiniImg17 from "../assets/mini/17.jpg";
+import Img17 from "../assets/17.jpeg";
+
+import MiniImg18 from "../assets/mini/18.jpeg";
+import Img18 from "../assets/18.jpeg";
+
 
 
 export const portfolioData = [
@@ -51,7 +63,7 @@ export const portfolioData = [
     client: "City Life Magazine",
     category: "Editorial",
     year: "2024",
-    description: "A series capturing the interplay of light and architecture in metropolitan spaces.",
+    description: "A softly lit studio portrait capturing quiet confidence and natural elegance. \n\nThe gentle tones of pink, contrasts beautifully against the textured backdrop, drawing focus to the subject’s calm expression and poised presence. \n\nShot with precision to highlight detail, depth, and subtle emotion.",
     role: "Lead Photographer",
     stack: ["Sony A7R IV", "24-70mm GM", "Lightroom"],
     link: "https://example.com",
@@ -97,10 +109,10 @@ export const portfolioData = [
   },
   {
     id: 3,
-    title: "Minimalist",
-    client: "Design Quarterly",
-    category: "Lifestyle",
-    year: "2023",
+    title: "Portraits of @evebojang",
+    client: "Eve Bojang",
+    category: "Portrait",
+    year: "2026",
     description: "Exploring negative space and simplicity in composition.",
     role: "Fine Art Photographer",
     stack: ["Fujifilm GFX", "50mm", "Capture One"],
@@ -124,7 +136,7 @@ export const portfolioData = [
     id: 4,
     title: "Urban Night",
     client: "Street Life",
-    category: "Street",
+    category: "Editorial",
     year: "2024",
     description: "Night photography capturing the energy of city streets after dark.",
     role: "Street Photographer",
@@ -196,14 +208,14 @@ export const portfolioData = [
   },
   {
     id: 7,
-    title: "Architecture",
-    client: "Modern Living",
-    category: "Architecture",
+    title: "Portraits of @mathys_spn",
+    client: "mathys",
+    category: "Headshot",
     year: "2023",
     description: "Geometric patterns in modern architecture.",
     role: "Architectural Photographer",
     stack: ["Hasselblad H6D", "35mm", "Photoshop"],
-    link: "https://example.com",
+    link: "https://www.instagram.com/p/DTu3KHhDU7m/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
     thumb: MiniImg7,
     original: Img7,
     size: "1080x1080",
@@ -221,7 +233,7 @@ export const portfolioData = [
     id: 8,
     title: "Motion Study",
     client: "Sports Weekly",
-    category: "Action",
+    category: "Headshot",
     year: "2024",
     description: "Freezing moments of athletic movement.",
     role: "Sports Photographer",
@@ -242,10 +254,10 @@ export const portfolioData = [
   },
   {
     id: 9,
-    title: "Aerial Views",
-    client: "Travel Magazine",
-    category: "Landscape",
-    year: "2023",
+    title: "Portraits of @mathys_spn",
+    client: "Mathys",
+    category: "Portrait",
+    year: "2026",
     description: "Drone photography capturing coastal patterns.",
     role: "Drone Pilot",
     stack: ["DJI Mavic 3", "24mm", "Lightroom"],
@@ -355,9 +367,9 @@ export const portfolioData = [
   },
   {
     id: 14,
-    title: "Golden Hour",
-    client: "Sunset Magazine",
-    category: "Landscape",
+    title: "Esq e.zion_12",
+    client: "Zion E.Anika",
+    category: "Portrait",
     year: "2023",
     description: "Coastal landscapes during golden hour.",
     role: "Landscape Photographer",
@@ -365,6 +377,98 @@ export const portfolioData = [
     link: "https://example.com",
     thumb: MiniImg14,
     original: Img14,
+    size: "1080x1080",
+    ratio: "3:3",
+    dimensions: { width: 1280, height: 850 },
+    details: {
+      camera: "Canon 5D IV",
+      focalLength: "24mm",
+      aperture: "f/11",
+      exposureTime: "1/30",
+      iso: "100"
+    }
+  },
+  {
+    id: 15,
+    title: "Esq e.zion_12",
+    client: "Zion E.Anika",
+    category: "Portrait",
+    year: "2023",
+    description: "Coastal landscapes during golden hour.",
+    role: "Landscape Photographer",
+    stack: ["Canon 5D IV", "16-35mm", "ND Filters"],
+    link: "https://example.com",
+    thumb: MiniImg15,
+    original: Img15,
+    size: "1080x1080",
+    ratio: "3:3",
+    dimensions: { width: 1280, height: 850 },
+    details: {
+      camera: "Canon 5D IV",
+      focalLength: "24mm",
+      aperture: "f/11",
+      exposureTime: "1/30",
+      iso: "100"
+    }
+  },
+  {
+    id: 16,
+    title: "Esq e.zion_12",
+    client: "Zion E.Anika",
+    category: "Portrait",
+    year: "2023",
+    description: "Coastal landscapes during golden hour.",
+    role: "Landscape Photographer",
+    stack: ["Canon 5D IV", "16-35mm", "ND Filters"],
+    link: "https://example.com",
+    thumb: MiniImg16,
+    original: Img16,
+    size: "1080x1080",
+    ratio: "3:3",
+    dimensions: { width: 1280, height: 850 },
+    details: {
+      camera: "Canon 5D IV",
+      focalLength: "24mm",
+      aperture: "f/11",
+      exposureTime: "1/30",
+      iso: "100"
+    }
+  },
+  {
+    id: 17,
+    title: "Esq e.zion_12",
+    client: "Zion E.Anika",
+    category: "Portrait",
+    year: "2023",
+    description: "Coastal landscapes during golden hour.",
+    role: "Landscape Photographer",
+    stack: ["Canon 5D IV", "16-35mm", "ND Filters"],
+    link: "https://example.com",
+    thumb: MiniImg17,
+    original: Img17,
+    size: "1080x1080",
+    ratio: "3:3",
+    dimensions: { width: 1280, height: 850 },
+    details: {
+      camera: "Canon 5D IV",
+      focalLength: "24mm",
+      aperture: "f/11",
+      exposureTime: "1/30",
+      iso: "100"
+    }
+  },
+  {
+    id: 18,
+    title: "Esq e.zion_12",
+    client: "Zion E.Anika",
+    category: "Portrait",
+    year: "2023",
+    description: "Coastal landscapes during golden hour.",
+    role: "Landscape Photographer",
+    stack: ["Canon 5D IV", "16-35mm", "ND Filters"],
+    link: "https://example.com",
+    thumb: MiniImg18,
+    original: Img18,
     size: "1080x1080",
     ratio: "3:3",
     dimensions: { width: 1280, height: 850 },

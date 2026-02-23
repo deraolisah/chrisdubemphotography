@@ -4,8 +4,41 @@ import { ArrowUpRight } from 'lucide-react';
 
 const GridItem = ({ item, onClick, isSelected }) => {
   const imgRef = useRef(null);
+  const overlayRef = useRef(null);
+  const titleRef = useRef(null);
+  const metaRef = useRef(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [imageError, setImageError] = useState(false);
+
+  const handleMouseEnter = useCallback(() => {
+    gsap.to(overlayRef.current, {
+      opacity: 1,
+      duration: 0.4,
+      ease: 'power2.out'
+    });
+    
+    gsap.to([titleRef.current, metaRef.current], {
+      y: 0,
+      duration: 0.4,
+      stagger: 0.1,
+      ease: 'power2.out'
+    });
+  }, []);
+
+  const handleMouseLeave = useCallback(() => {
+    gsap.to(overlayRef.current, {
+      opacity: 0,
+      duration: 0.4,
+      ease: 'power2.out'
+    });
+    
+    gsap.to([titleRef.current, metaRef.current], {
+      y: 16,
+      duration: 0.4,
+      stagger: 0.05,
+      ease: 'power2.in'
+    });
+  }, []);
 
   const handleClick = useCallback((e) => {
     e.preventDefault();
@@ -27,11 +60,13 @@ const GridItem = ({ item, onClick, isSelected }) => {
 
   return (
     <div 
-      className={`group relative cursor-pointer transition-all duration-500 ${
+      className={`relative cursor-pointer transition-all duration-500 ${
         isSelected ? 'opacity-0 scale-95' : 'opacity-100'
       }`}
       onClick={handleClick}
-      // data-cursor="true"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      data-cursor="true"
     >
       <div 
         className="relative w-full overflow-hidden bg-gray-900"
@@ -49,7 +84,7 @@ const GridItem = ({ item, onClick, isSelected }) => {
           ref={imgRef}
           src={item.thumb}
           alt={item.title}
-          className={`absolute inset-0 w-full h-full object-cover object-top transition-opacity duration-500 ${
+          className={`absolute inset-0 w-full h-full object-cover object-top transition-all duration-500 ${
             isLoaded ? 'opacity-100' : 'opacity-0'
           }`}
           loading="lazy"
@@ -57,21 +92,30 @@ const GridItem = ({ item, onClick, isSelected }) => {
           onError={() => setImageError(true)}
         />
 
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-          <div className="absolute bottom-0 left-0 right-0 p-4">
-            <h3 className="text-white font-semibold text-lg mb-1 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 flex items-center gap-1">
+        {/* Overlay - Controlled by GSAP */}
+        <div 
+          ref={overlayRef}
+          className="absolute inset-0 bg-linear-to-t from-black/80 via-dark/60 to-transparent opacity-0"
+        >
+          <div className="absolute bottom-0 left-0 right-0 p-4 pb-6">
+            <h3 
+              ref={titleRef}
+              className="text-white font-semibold text-lg mb-1 translate-y-4 flex items-center gap-1"
+            >
               {item.title} <ArrowUpRight size={18} strokeWidth={1} />
             </h3>
-            <p className="text-gray-300 text-sm transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-75">
+            <p 
+              ref={metaRef}
+              className="text-gray-300 text-sm translate-y-4 capitalize"
+            >
               {item.client} • {item.year}
             </p>
           </div>
         </div>
 
-        {/* Category badge */}
-        <div className="absolute top-4 left-4">
-          <span className="px-3 py-1 bg-black/50 backdrop-blur-sm text-white text-xs rounded-full border border-white/20 capitalize">
+        {/* Category badge - Always visible */}
+        <div className="absolute top-4 left-4 z-10">
+          <span className="px-3 py-1 bg-black/50 backdrop-blur-sm text-white text-xs rounded-full border border-white/15 capitalize">
             {item.category}
           </span>
         </div>

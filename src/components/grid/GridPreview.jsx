@@ -131,7 +131,7 @@ const GridPreview = forwardRef(({
               {selectedItem.title}
             </h2>
             
-            <p className="text-gray-300 text-lg md:text-xl mb-6 leading-relaxed">
+            <p className="text-gray-300 text-lg mb-6 leading-relaxed whitespace-pre-wrap">
               {selectedItem.description}
             </p>
             
@@ -152,7 +152,7 @@ const GridPreview = forwardRef(({
             <div ref={detailsRef} className="grid grid-cols-2 gap-6 border-t border-white/20 pt-8">
               <div>
                 <h4 className="text-white/60 text-xs uppercase tracking-wider mb-2">Client</h4>
-                <p className="text-white font-medium">{selectedItem.client}</p>
+                <p className="text-white font-medium capitalize">{selectedItem.client}</p>
               </div>
               <div>
                 <h4 className="text-white/60 text-xs uppercase tracking-wider mb-2">Category</h4>
@@ -204,7 +204,7 @@ const GridPreview = forwardRef(({
       <button
         ref={closeBtnRef}
         onClick={onClose}
-        className="fixed top-6 right-6 z-70 p-3 bg-black/50 hover:bg-black/70 text-white rounded-full backdrop-blur-sm transition-all duration-300 hover:scale-110 group"
+        className="fixed top-6 right-6 z-70 p-3 bg-black/50 hover:bg-black/70 text-white rounded-full backdrop-blur-sm transition-all duration-300 hover:scale-110 group cursor-pointer"
         aria-label="Close"
       >
         <X size={24} className="group-hover:rotate-90 transition-transform duration-300" />
