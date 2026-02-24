@@ -66,7 +66,7 @@ const GridPreview = forwardRef(({
       <img
         ref={cloneImageRef}
         className="fixed z-60 will-change-transform opacity-0"
-        alt=""
+        alt={selectedItem.title}
         style={{ 
           position: 'fixed',
           objectFit: 'cover',

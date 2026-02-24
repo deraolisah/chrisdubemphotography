@@ -4,11 +4,11 @@ import { Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="py-12 border-t border-gray-800 bg-black mt-16">
+    <footer className="py-12 bg-black mt-16">
       <div className="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-sm">
 
         <div className="flex flex-col gap-2">
-          <img src={logo} alt="" className="w-40 object-cover mb-2"/>
+          <img src={logo} alt="" className="w-32 object-cover mb-2"/>
           <p className="text-gray-400">
             Professional personal branding and corporate photography for leaders, teams, and growing brands/businesses.
           </p>
@@ -61,10 +61,10 @@ const Footer = () => {
       <hr className="flex my-10 h-px border-0 bg-gray-800"/>
 
       <div className="my-4 mx-auto text-center text-sm text-gray-400 flex items-center justify-center gap-4 gap-y-2 flex-wrap">
-        <p> Data Protection  </p>
-        <p> Imprint </p>
-        <p> Accessibility </p>
-        <p> Terms & Conditions </p>
+        <a href="/protection"> Data Protection  </a>
+        <a href="/imprint"> Imprint </a>
+        <a href="/accessibility"> Accessibility </a>
+        <a href="/terms"> Terms & Conditions </a>
       </div>
 
       <div className="text-center text-gray-400 text-xs">

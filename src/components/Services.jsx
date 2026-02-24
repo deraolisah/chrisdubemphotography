@@ -53,31 +53,23 @@ const Services = () => {
                     }`}>
                       {service.title}
                     </h3>
-                    {/* <p className={`hidden md:flex text-sm md:text-base transition-all duration-300 ${
-                      activeIndex === index ? 'text-gray-200' : 'text-gray-600'
-                    }`}>
-                      Click to view details →
-                    </p> */}
-                    <p className={`flex md:hidden text-sm md:text-base transition-all duration-300 ${
+                    <p className={`flex lg:hidden text-sm md:text-base transition-all duration-300 ${
                       activeIndex === index ? 'text-gray-100' : 'text-gray-600'
                     }`}>
-                      {/* Click to view details → */}
                       {activeIndex === index 
                         ? service.description 
                         : ""
                       }
                     </p>
                   </div>
-                  <div className={`hidden md:flex ml-4 text-2xl font-light transition-all duration-300 ${
+                  <div className={`hidden lg:flex ml-4 text-2xl font-light transition-all duration-300 ${
                     activeIndex === index ? 'text-white' : 'text-gray-400'
                   }`}>
                     →
-                    {/* {activeIndex === index ? '↓' : '→'} */}
                   </div>
-                  <div className={`flex md:hidden ml-4 text-2xl font-light transition-all duration-300 ${
+                  <div className={`flex lg:hidden ml-4 text-2xl font-light transition-all duration-300 ${
                     activeIndex === index ? 'text-white' : 'text-gray-400'
                   }`}>
-                    {/* → */}
                     {activeIndex === index ? '↓' : '→'}
                   </div>
                 </div>

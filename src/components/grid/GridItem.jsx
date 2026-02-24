@@ -116,7 +116,7 @@ const GridItem = ({ item, onClick, isSelected }) => {
         {/* Category badge - Always visible */}
         <div className="absolute top-4 left-4 z-10">
           <span className="px-3 py-1 bg-black/50 backdrop-blur-sm text-white text-xs rounded-full border border-white/15 capitalize">
-            {item.category}
+            {item.id}. {item.category}
           </span>
         </div>
       </div>
