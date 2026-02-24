@@ -97,7 +97,7 @@ const GridItem = ({ item, onClick, isSelected }) => {
           ref={overlayRef}
           className="absolute inset-0 bg-linear-to-t from-black/80 via-dark/60 to-transparent opacity-0"
         >
-          <div className="absolute bottom-0 left-0 right-0 p-4 pb-6">
+          <div className="absolute bottom-0 left-0 right-0 p-4">
             <h3 
               ref={titleRef}
               className="text-white font-semibold text-lg mb-1 translate-y-4 flex items-center gap-1"
@@ -108,7 +108,7 @@ const GridItem = ({ item, onClick, isSelected }) => {
               ref={metaRef}
               className="text-gray-300 text-sm translate-y-4 capitalize"
             >
-              {item.client} • {item.year}
+              {item.client} • {item.year} • {item.ratio}
             </p>
           </div>
         </div>
