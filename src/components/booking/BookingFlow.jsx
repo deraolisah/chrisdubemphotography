@@ -26,6 +26,7 @@ const BookingFlow = () => {
   };
 
   const StepComponent = steps[state.currentStep];
+  // const StepComponent = steps[state.activeTab];
   
   const handleConfirmCancel = () => {
     dispatch({ type: 'RESET_BOOKING' });

@@ -98,7 +98,7 @@ const bookingReducer = (state, action) => {
     
     case 'SET_BOOKING_STATUS':
       return { ...state, bookingStatus: action.payload };
-    
+
     case 'SET_BOOKING_REFERENCE':
       return { ...state, bookingReference: action.payload };
     

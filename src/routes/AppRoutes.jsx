@@ -11,6 +11,8 @@ import Protection from "../pages/Protection.jsx";
 import Imprint from "../pages/Imprint.jsx";
 import Accessibility from "../pages/Accessibility.jsx";
 
+import Admin from "../pages/Admin.jsx";
+
 function AppRoutes() {
   return (
     <div className="min-h-screen overflow-x-hidden bg-dark text-white font-body -tracking-[0.5px] pt-10 md:pt-0">
@@ -24,6 +26,8 @@ function AppRoutes() {
         <Route path="/protection" element={<Protection />} />
         <Route path="/imprint" element={<Imprint />} />
         <Route path="/accessibility" element={<Accessibility />} />
+
+        <Route path="/admin" element={<Admin />} />
 
         <Route path="*" element={<h1 className="py-20 text-center"> Not Found </h1> } />
       </Routes>
