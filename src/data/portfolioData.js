@@ -49,10 +49,10 @@ import MiniImg16 from "../assets/mini/16.jpg";
 import Img16 from "../assets/16.JPEG";
 
 import MiniImg17 from "../assets/mini/17.jpg";
-import Img17 from "../assets/17.jpeg";
+import Img17 from "../assets/17.JPEG";
 
 import MiniImg18 from "../assets/mini/18.jpeg";
-import Img18 from "../assets/18.jpeg";
+import Img18 from "../assets/18.JPEG";
 
 
 
