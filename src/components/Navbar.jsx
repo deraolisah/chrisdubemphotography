@@ -17,7 +17,6 @@ const Navbar = () => {
   const handleLinkClick = () => {
     setIsMenuOpen(false);
   }
-
   
   //   useEffect(() => {
   //   if (modalOpened) {

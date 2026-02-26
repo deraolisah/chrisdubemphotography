@@ -95,7 +95,7 @@ const GridItem = ({ item, onClick, isSelected }) => {
         {/* Overlay - Controlled by GSAP */}
         <div 
           ref={overlayRef}
-          className="absolute inset-0 bg-linear-to-t from-black/80 via-dark/60 to-transparent opacity-0"
+          className="absolute inset-0 bg-linear-to-t from-black/88 via-dark/60 to-transparent opacity-0"
         >
           <div className="absolute bottom-0 left-0 right-0 p-4">
             <h3 
