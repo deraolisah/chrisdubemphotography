@@ -46,7 +46,7 @@ import MiniImg15 from "../assets/mini/15.jpeg";
 import Img15 from "../assets/15.jpeg";
 
 import MiniImg16 from "../assets/mini/16.jpg";
-import Img16 from "../assets/16.jpeg";
+import Img16 from "../assets/16.JPEG";
 
 import MiniImg17 from "../assets/mini/17.jpg";
 import Img17 from "../assets/17.jpeg";
