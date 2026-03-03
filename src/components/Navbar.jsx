@@ -6,13 +6,13 @@ import logo from "../assets/logo-horizontal.png";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  useEffect(() => {
-    if(isMenuOpen){
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    } 
-  }, [isMenuOpen]);
+  // useEffect(() => {
+  //   if(isMenuOpen){
+  //     document.body.style.overflow = "hidden";
+  //   } else {
+  //     document.body.style.overflow = "auto";
+  //   } 
+  // }, [isMenuOpen]);
 
   const handleLinkClick = () => {
     setIsMenuOpen(false);
@@ -82,20 +82,20 @@ const Navbar = () => {
 
       {/* {isMenuOpen && ( */}
         <div className={`md:hidden bg-dark/99 w-full h-screen absolute z-100 top-12 left-0 transition-all duration-500 ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}>
-          <ul className='uppercase h-full flex flex-col items-center justify-between text-sm py-4'>
-            <span></span>
-            <span className='flex flex-col items-center gap-6'>
+          <ul className='uppercase h-full flex flex-col items-center justify-center gap-10 text-sm py-4'>
+            {/* <span className='h-10 w-full '></span> */}
+            <span className='flex flex-col items-center gap-6 -mt-18'>
               <NavLink onClick={handleLinkClick} to="/" className={({ isActive }) => isActive ? "text-primary font-bold" : "text-gray-200"}> Home </NavLink>
               <NavLink onClick={handleLinkClick} to="/about" className={({ isActive }) => isActive ? "text-primary font-bold" : "text-gray-200"}> About </NavLink>
               <NavLink onClick={handleLinkClick} to="/book" className={({ isActive }) => isActive ? "text-primary font-bold" : "text-gray-200"}> Book </NavLink>
               <NavLink onClick={handleLinkClick} to="/contact" className={({ isActive }) => isActive ? "text-primary font-bold" : "text-gray-200"}> Contact </NavLink>
             </span>
 
-            <span className='flex items-center gap-4 sticky bottom-10'> 
-              <a href=""> <Instagram />  </a>
-              <a href=""> <Linkedin /> </a>
-              <a href=""> <Twitter /> </a>
-              <a href=""> <Facebook /> </a>
+            <span className='w-full h-10 flex items-center justify-center gap-8'> 
+              <a href=""> <Instagram size={18} />  </a>
+              <a href=""> <Linkedin size={18} /> </a>
+              <a href=""> <Twitter size={18} /> </a>
+              <a href=""> <Facebook size={18} /> </a>
             </span>
           </ul>
         </div>
