@@ -4,7 +4,7 @@ import Hero from "../components/Hero.jsx";
 import ImageGrid from '../components/grid/ImageGrid.jsx';
 import HowItWorks from '../components/HowItWorks.jsx';
 import Services from "../components/Services.jsx";
-// import SimpleCursor from '../components/ui/SimpleCursor.jsx'; 
+import Testimonials from "../components/Testimonials.jsx";
 
 const Home = () => {
   return (
@@ -25,8 +25,9 @@ const Home = () => {
         <q className=''>
           Authenticity is the cornerstone of powerful personal branding. I specialize in working with professionals who may feel out of their element in front of the camera.         
         </q>
-        {/* By creating a calm and directed experience, I help you drop the nerves and show up as yourself. The result is a library of images that don’t just look like you—they feel like you, elevating your corporate identity with genuine confidence. */}
       </div> 
+
+      <Testimonials />
     </>
   );
 }

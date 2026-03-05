@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import { Send, CheckCircle, AlertCircle } from "lucide-react";
 
+
 const Contact = () => {
+  const API_URL = import.meta.env.VITE_API_URL;
+  
   // Form state
   const [formData, setFormData] = useState({
     name: '',
@@ -44,6 +47,10 @@ const Contact = () => {
       setErrorMessage('Please enter a valid email address');
       return false;
     }
+    if (!formData.subject.trim()) {
+      setErrorMessage('Subject is required');
+      return false;
+    }
     if (!formData.message.trim()) {
       setErrorMessage('Message is required');
       return false;
@@ -67,7 +74,7 @@ const Contact = () => {
 
     try {
       // Send data to backend
-      const response = await fetch('/api/contact', {
+      const response = await fetch(`${API_URL}/api/contact`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -75,7 +82,8 @@ const Contact = () => {
         body: JSON.stringify({
           name: formData.name,
           email: formData.email,
-          message: formData.message // You can include subject in message or add to backend
+          subject: formData.subject,
+          message: formData.message 
         }),
       });
 
@@ -171,7 +179,7 @@ const Contact = () => {
         {/* Subject */}
         <div className="md:col-span-2">
           <label htmlFor="subject" className="block text-sm font-medium mb-2">
-            Subject
+            Subject <span className="text-red-500">*</span>
           </label>
           <input
             type="text"
@@ -182,6 +190,7 @@ const Contact = () => {
             placeholder="Photography booking, collaboration, etc."
             className="w-full border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:border-primary bg-transparent"
             disabled={isSubmitting}
+            required
           />
         </div>
 

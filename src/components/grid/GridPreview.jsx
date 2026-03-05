@@ -39,13 +39,46 @@ const GridPreview = forwardRef(({
     }
   }, [isExpanded, selectedItem]);
 
+  // useEffect(() => {
+  //   if(isExpanded){
+  //     document.body.style.overflow = "hidden";
+  //   } else {
+  //     document.body.style.overflow = "auto";
+  //   } 
+  // }, [isExpanded]);
+
   useEffect(() => {
-    if(isExpanded){
-      document.body.style.overflow = "hidden";
+    if (isExpanded) {
+      const scrollY = window.scrollY;
+      document.body.style.position = "fixed";
+      document.body.style.top = `-${scrollY}px`;
     } else {
-      document.body.style.overflow = "auto";
-    } 
+      const scrollY = document.body.style.top;
+      document.body.style.position = "";
+      document.body.style.top = "";
+      window.scrollTo(0, parseInt(scrollY || "0") * -1);
+    }
   }, [isExpanded]);
+
+
+  // useEffect(() => {
+  //   const html = document.documentElement;
+
+  //   if (isExpanded) {
+  //     const scrollBarWidth = window.innerWidth - html.clientWidth;
+
+  //     html.style.overflow = "hidden";
+  //     html.style.paddingRight = `${scrollBarWidth}px`;
+  //   } else {
+  //     html.style.overflow = "";
+  //     html.style.paddingRight = "";
+  //   }
+
+  //   return () => {
+  //     html.style.overflow = "";
+  //     html.style.paddingRight = "";
+  //   };
+  // }, [isExpanded]);
 
   if (!selectedItem) return null;
 
